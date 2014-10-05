@@ -1,0 +1,16 @@
+@import 'variables';
+
+//Grid
+$grid-gutter-width:0px;
+
+//Fonts
+
+
+$navbar-default-bg:rgba(200,200,200,.1);
+$navbar-default-link-color:$time-red;
+$border-radius-base:0;
+$navbar-default-link-active-bg:#efefef;
+$navbar-default-link-active-color:#cdcdcd;
+// $navbar-default-link-hover-bg:;
+
+@import 'bootstrap';

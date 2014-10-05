@@ -1,0 +1,61 @@
+@import 'variables.css.scss';
+
+.container {
+  padding:0 10px;
+}
+
+//HOME TOP ////////////////////////////////////////////////////////////////////
+#top {
+  // position:relative;
+  height:480px;
+  h1 {@include header-style(32px, 100, $time-red);}
+  h2 {@include header-style(14px, 200, #000);}
+  background-image:url(top-bg-1.png);
+  @include background-style(90%, 50%, 100%, no-repeat)
+}
+
+//HOME MADE IN FRANCE /////////////////////////////////////////////////////////
+#made-in-france {
+  background-color:$time-red;
+  height:480px;
+  h1 {@include header-style(32px, 100, #fff);}
+}
+
+//Bike/Frames Features ////////////////////////////////////////////////////////
+#bikes-frames-feature {
+  background-color:#efefef;
+  height:480px;
+  h1 {@include header-style(32px, 100, #000);}
+}
+
+//Bike/Frames /////////////////////////////////////////////////////////////////
+#bikes-frames {
+  background-color:#fff;
+  height:480px;
+  h1 {@include header-style(32px, 100, #000);}
+
+}
+
+//Bike/Frames /////////////////////////////////////////////////////////////////
+#bikes-frames {
+  background-color:#efefef;
+  height:480px;
+  h1 {@include header-style(32px, 100, #cdcdcd);}
+}
+
+//AKTIV ///////////////////////////////////////////////////////////////////////
+#aktiv {
+  background-color:#000;
+  height:480px;
+  h1 {@include header-style(32px, 100, #fff);}
+}
+
+//pedals ///////////////////////////////////////////////////////////////////////
+#pedals {
+  background-color:#fff;
+  height:480px;
+  h1 {@include header-style(32px, 100, #000);}
+}
+
+
+

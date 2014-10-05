@@ -1,0 +1,39 @@
+$time-red: #d2232a;
+
+$light-sans-serif:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$light-weight:100;
+$med-weight:400;
+$heavy-weight:700;
+
+//navbar 
+.nav > li > a {
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+
+@mixin header-style($font-size, $font-weight, $font-color) {
+  font-family:$light-sans-serif;
+  font-weight:$font-weight;
+  font-size:$font-size;
+  color:$font-color;
+}
+
+@mixin background-style($bg-size, $bg-pos-x, $bg-pos-y, $bg-repeat) {
+
+  background-size:$bg-size;
+  background-position-x:$bg-pos-x;
+  background-position-y:$bg-pos-y;
+  background-repeat:$bg-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
