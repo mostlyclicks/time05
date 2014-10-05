@@ -1,10 +1,14 @@
 ---
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-01699fcc5304c18792e2057802adc17a.js
-application/index.js: application-01699fcc5304c18792e2057802adc17a.js
-application.css: application-cab7399fffa4114339f9d3914fbe9b2d.css
-application/index.css: application-cab7399fffa4114339f9d3914fbe9b2d.css
+time-logo.png: time-logo-2c5c36d539d44e7ffc9939d44f4314e5.png
+time-logo/index.png: time-logo-2c5c36d539d44e7ffc9939d44f4314e5.png
+top-bg-1.png: top-bg-1-35db83100af138155441666d2aded6a6.png
+top-bg-1/index.png: top-bg-1-35db83100af138155441666d2aded6a6.png
+application.js: application-ab7e505a864855d10bfec68d7a7a0af8.js
+application/index.js: application-ab7e505a864855d10bfec68d7a7a0af8.js
+application.css: application-dfeae81edcbf0d5626b7edd045c29a2f.css
+application/index.css: application-dfeae81edcbf0d5626b7edd045c29a2f.css
 favicon.ico: favicon-acec7f735fa1a67eaf836a34ad4e9bd3.ico
 favicon/index.ico: favicon-acec7f735fa1a67eaf836a34ad4e9bd3.ico
 refinery/add.png: refinery/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
