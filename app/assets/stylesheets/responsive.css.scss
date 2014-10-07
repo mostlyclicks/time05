@@ -5,26 +5,134 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  body {border:5px solid red;}
+  //body {border:5px solid gray;}
+  .first {
+    // display:none;
+  }
   #top {
     min-height:720px;
+    @include background-style(120%, 50%, 100%, no-repeat);
     h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
   }
+  .lead {
+    color:#fff;
+    text-shadow:2px 2px 15px rgba(0,0,0,1);
+    padding:10px;
+    border-top:2px solid $time-red;
+  }
 
+  #l2-bike {
+    #bike-main-txt {
+      border:none;
+      img {
+        margin-top:0px;
+        
+      }
+      h3 {
+        display:inline-block; 
+        @include header-style(28px, 100, #fff);
+        margin-top:0;
+        margin-bottom:25px;
+        padding:0 .25em;
+        text-transform: uppercase;
+      }
+    }
+    #bike-img img {@include bike-hero-style(0%, 100%);}
+  }
+  #l2-bike-features {
+    background-image:url(top-bg-3-light.png);
+    @include background-style(120%, 50%, 100%, no-repeat);
+    #bike-features-sub {
+      padding:40px 0;
+
+      h2 {
+      @include header-style(42px, 700, $time-red);
+      text-transform: uppercase;
+    }
+    }
+    
+  }
+  #l2-bike-gallery {
+    padding:80px;
+    // .gallery-img {width:150%;margin:0 auto;}
+  }
 }
+
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  body {border:5px solid blue;}
+  //body {border:5px solid blue;}
   #top {
-    // min-height:960px;
+    @include background-style(110%, 50%, 100%, no-repeat);
   }
+  #l2-bike {
+    height:100vh;
+    #bike-main-txt {
+      margin-top:0px;
+      padding-top:100px;
+      border:none;
+      border-left:2px solid $time-red;
+      h3 {
+        display:block; 
+        @include header-style(28px, 100, #fff);
+        padding:0;
+        margin:0 0 5px 20px;
+        text-align:left;
+        text-transform: uppercase;
+      } 
+      .lead {
+        border-top:none;
+      }
+    }
+
+    #bike-img img {@include bike-hero-style(-500px, 210%);}
+  }
+  #l2-bike-features {
+    padding:80px 0;
+    background-image:url(top-bg-3-light.png);
+    @include background-style(110%, 50%, 100%, no-repeat);
+    h2 {
+      @include header-style(42px, 700, $time-red);
+      text-transform: uppercase;
+    }
+  }
+  .gallery-img {width:100%;margin:0 auto;}
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
-  body {border:5px solid yellow;}
+ // body {border:5px solid yellow;}
+  #top {
+    @include background-style(99%, 50%, 100%, no-repeat);
+  }
+  #l2-bike {
+    @include background-style(cover, 50%, 100%, no-repeat);
+    height:100vh;
+    #bike-main-txt {
+      margin-top:0px;
+      padding-top:100px;
+      border:none;
+      border-left:2px solid $time-red; 
+      .lead {
+        border-top:none;
+      }
+    }
+    #bike-img img {@include bike-hero-style(-410px, 170%);}
+  }
+  #l2-bike-features {
+    padding:80px 0;
+    background-image:url(top-bg-3-light.png);
+    @include background-style(130%, 50%, 100%, no-repeat);
+    h2 {
+      @include header-style(42px, 700, $time-red);
+      text-transform: uppercase;
+    }
+  }
+
+  .gallery-img {width:90%;margin:0 auto;}
 
 
 }
+

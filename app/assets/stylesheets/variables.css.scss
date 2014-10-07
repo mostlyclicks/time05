@@ -5,6 +5,8 @@ $light-weight:100;
 $med-weight:400;
 $heavy-weight:700;
 
+
+
 //navbar 
 .nav > li > a {
   text-transform: uppercase;
@@ -25,6 +27,28 @@ $heavy-weight:700;
   background-position-x:$bg-pos-x;
   background-position-y:$bg-pos-y;
   background-repeat:$bg-repeat;
+}
+
+@mixin bike-hero-style($left-margin, $size) {
+  margin-left:$left-margin;
+  height:$size;
+  width:$size;
+}
+
+.carousel-caption {
+  color:#cdcdcd;
+  font-size:16px;
+  text-shadow:none;
+}
+
+.carousel-control.left, .carousel-control.right  {
+  background-image:none !important;
+  color:$time-red;
+  top:20%;
+}
+
+.center-it {
+  margin:0 auto;
 }
 
 

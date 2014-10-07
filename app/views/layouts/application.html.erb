@@ -3,10 +3,12 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
     <%= render "/refinery/head" %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
   <body id="<%= canonical_id @page %>">
     <%= site_bar -%>
-    <div id="page_container">
+    <div class="page-wrap" id="page_container">
       <header id="header">
         <%= render "/refinery/header" -%>
       </header>
@@ -15,10 +17,12 @@
               <%= yield %>
         
       </section>
-      <footer>
+      </div>
+      <footer class="site-footer">
         <%= render "/refinery/footer" -%>
       </footer>
-    </div>
+    
     <%= render "/refinery/javascripts" %>
+  </div>
   </body>
 </html>

@@ -1,17 +1,61 @@
 @import 'variables.css.scss';
 
-.container {
-  padding:0 10px;
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -250px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 250px; 
+}
+.site-footer {
+  background: $time-red;
+  padding-top:40px;
+  color:#fff;
+  ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  a {
+    color:rgba(255,255,255,.6);
+    &:hover {
+      color:rgba(255,255,255,1);
+    }
+  }
+  small {
+    display:block;
+    margin-top:20px;
+    color:rgba(255,255,255,.3);
+  }
+  h4 {@include header-style(24px, 100, #fff);}
+  span {
+    margin:0 3px;
+  }
 }
 
 //HOME TOP ////////////////////////////////////////////////////////////////////
 #top {
-  // position:relative;
   height:480px;
-  h1 {@include header-style(32px, 100, $time-red);}
+  .container {padding:0 10px;}
+  h1 {
+    @include header-style(32px, 100, $time-red);
+    text-align:center;
+  }
   h2 {@include header-style(14px, 200, #000);}
   background-image:url(top-bg-1.png);
-  @include background-style(90%, 50%, 100%, no-repeat)
+  @include background-style(130%, 50%, 100%, no-repeat)
 }
 
 //HOME MADE IN FRANCE /////////////////////////////////////////////////////////
@@ -55,6 +99,78 @@
   background-color:#fff;
   height:480px;
   h1 {@include header-style(32px, 100, #000);}
+}
+
+
+// Show ///////////////////////////////////////////////////////////////////////
+.show {
+  .container {padding:0 10px;}
+  h1 {@include header-style(36px, 100, $time-red);}
+}
+
+// BIKE ///////////////////////////////////////////////////
+#l2-bike {
+  background-image:url(bg-SKYLON.jpg);
+  background-repeat:no-repeat;
+  height:auto;
+  width:100%;
+  #bike-main-txt {
+    border-top:2px solid $time-red;
+    padding:20px;
+    text-align:center;
+    img {margin:0 auto;}
+  }
+  h3 {
+    display:inline-block; 
+    @include header-style(24px, 100, #fff);
+    padding:.25em;
+    text-transform: uppercase;
+  }
+  .lead {
+    text-align:left;
+    padding:20px;
+    color:#fff; 
+  }
+  #bike-img img {@include bike-hero-style(0px, 100%);}
+}
+
+#aktiv-choice {
+  padding:40px 10px;
+  background-color:#fff;
+  h1 {@include header-style(32px, 200, $time-red);}
+  #or h1{
+    font-size:48px;
+    font-weight:$heavy-weight;
+
+  }
+}
+
+#l2-bike-features {
+  padding:80px 10px;
+  background-color:rgba(225,225,225,.1);
+  h1 {@include header-style(48px, 100, $time-red);}
+  h2 {@include header-style(56px, 700, $time-red);}
+  img {
+    border:5px solid rgba(0,0,0,.1);
+    margin-bottom:15px;
+  }
+  .bike-feature {
+    padding:20px;
+  }
+
+}
+
+#l2-bike-gallery {
+  h1 {@include header-style(48px, 100, $time-red);}
+
+}
+
+#l2-geometry {
+  padding:80px 0;
+  background-color:rgba(235,235,235,.1);
+  .table-header {
+    font-weight:bold;
+  }
 }
 
 

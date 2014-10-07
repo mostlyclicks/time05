@@ -2,6 +2,8 @@
 
 //Grid
 $grid-gutter-width:0px;
+$grid-float-breakpoint:992px;
+$grid-float-breakpoint-max:992px;
 
 //Fonts
 
@@ -11,6 +13,10 @@ $navbar-default-link-color:$time-red;
 $border-radius-base:0;
 $navbar-default-link-active-bg:#efefef;
 $navbar-default-link-active-color:#cdcdcd;
-// $navbar-default-link-hover-bg:;
+//$navbar-padding-horizontal:$floor((20 / 2));
+
+
+
+
 
 @import 'bootstrap';

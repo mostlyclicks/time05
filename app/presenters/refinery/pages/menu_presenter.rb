@@ -17,7 +17,7 @@ module Refinery
 
             # self.dom_id = nil
             # self.css = "pull-left"
-            self.menu_tag = :section
+            self.menu_tag = :nav
             self.list_tag = :ul
             self.list_first_css = ["nav", "navbar-nav", "navbar-right"]
             self.carret = '<b class="caret"></b>'
