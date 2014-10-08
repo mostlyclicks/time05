@@ -124,7 +124,7 @@ html, body {
   }
   h3 {
     display:inline-block; 
-    @include header-style(24px, 100, #fff);
+    @include header-style(20px, 100, #fff);
     padding:.25em;
     text-transform: uppercase;
   }
