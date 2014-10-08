@@ -1,20 +1,29 @@
 <!-- START of L2 BIKE CONTENT -->
+
+<style>
+<% if @page.title == 'Izon' %>
+  #l2-bike {background-image:url(/assets/izon-bg.jpg);}
+<% end %>
+</style>
+
+
+
 <section class="show" id="l2-bike">
   <div class="container">
     <%#= render '/refinery/content_page' %>
     <div class="row">
       <div class="col-sm-12 col-md-8 col-lg-8" id="bike-img">
-        <%= image_tag 'Skylon-AKTIV-Team_bike.png', class: 'img-responsive1' %>
+        <%= image_tag 'Izon-AKTIV-red-bike.png', class: 'img-responsive1' %>
       </div>
       <div class="col-md-4 col-lg-4" id="bike-main-txt">
-        <%= image_tag 'SKYLON-LOGO-white.png', class: 'img-responsive' %>
+        <%= image_tag 'IZON-LOGO-black.png', class: 'img-responsive' %>
         
-          <h3>Explosive</h3>
-          <h3>Power</h3>
-          <h3>Precision</h3>
+          <h3>Reactive</h3>
+          <h3>Polyvalence</h3>
+          <h3>Agility</h3>
         
         <p class="lead">
-          Truly, a bike that does it all. We cleaned the slate and started with a 100% new design. New forms and tube shapes allow the SKYLON to cheat the wind, increase stiffness yet with our RTM technology it doesn't beat you up like most aero bikes do. Explosive, fast and confident.
+          IZON is the ideal all around bike, climbing or descending those long switchbacks to attacking around a corner in a criterium,the intuitiveness of the IZON will surprise you.
         </p>
       </div>
     </div>
@@ -25,10 +34,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <%= image_tag 'Skylon-plasma-frame.png', class: 'img-responsive' %>
+        <%= image_tag 'Izon-red-frame.png', class: 'img-responsive' %>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <%= image_tag 'Skylon-AKTIV-plasma-frame.png', class: 'img-responsive' %>
+        <%= image_tag 'Izon-AKTIV-red-frame.png', class: 'img-responsive' %>
       </div>
     </div>
     <div class="row">
@@ -67,6 +76,8 @@
   </div>
 </section>
 
+<% content_for :skylon_stuff do %>
+<!-- 
 <section id="l2-bike-features">
   <div class="container">
   <div class="row text-center">
@@ -112,6 +123,8 @@
   </div>
 </div>
 </section>
+-->
+<% end %>
 
 <section id="l2-bike-gallery">
   <div class="container-fluid">
@@ -121,7 +134,7 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <% @skylon_images.each_with_index do |skylon, index| %>
+            <% @izon_images.each_with_index do |izon, index| %>
             <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>" style="background-color:#cdcdcd;"></li>
             <% end %>
           </ol>
@@ -129,12 +142,12 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
 
-            <% @skylon_images.each_with_index do |skylon, index| %>
+            <% @izon_images.each_with_index do |izon, index| %>
 
             <div class="item <% if index == 0 %>active<% end %>" >
-              <%= image_tag skylon[:bike_image], alt: skylon[:bike_title], class: 'img-responsive gallery-img' %>
+              <%= image_tag izon[:bike_image], alt: izon[:bike_title], class: 'img-responsive gallery-img' %>
               <div class="carousel-caption">
-                <%= skylon[:bike_title] %>
+                <%= izon[:bike_title] %>
               </div>
             </div>
             <% end %>`
@@ -160,8 +173,8 @@
         <%= image_tag 'TIME-2015-geometry.png', class: 'img-responsive center-it' %>
       </div>
       <div class="col-lg-7">
-        <h3>SKYLON Geometry</h3>
-        <%= render 'shared/skylon_geo_grid' %>
+        <h3>IZON Geometry</h3>
+        <%= render 'shared/izon_geo_grid' %>
       </div>
     </div>
   </div>

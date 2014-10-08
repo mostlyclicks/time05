@@ -112,7 +112,7 @@ html, body {
 
 // BIKE ///////////////////////////////////////////////////
 #l2-bike {
-  background-image:url(bg-SKYLON.jpg);
+  // background-image:url(bg-SKYLON.jpg);
   background-repeat:no-repeat;
   height:auto;
   width:100%;
@@ -206,6 +206,7 @@ html, body {
   .table-header {
     font-weight:bold;
   }
+  h3 {@include header-style(48px, 100, $time-red);}
 }
 
 
