@@ -17,17 +17,17 @@
     <%#= render '/refinery/content_page' %>
     <div class="row">
       <div class="col-sm-12 col-md-8 col-lg-8" id="bike-img">
-        <%= image_tag 'Izon-AKTIV-red-bike.png', class: 'img-responsive1' %>
+        <%= image_tag 'Fluidity-AKTIV-yellow-bike.png', class: 'img-responsive1' %>
       </div>
       <div class="col-md-4 col-lg-4" id="bike-main-txt">
-        <%= image_tag 'IZON-LOGO-black.png', class: 'img-responsive' %>
+        <%= image_tag 'FLUIDITY-LOGO-black.png', class: 'img-responsive' %>
         
-          <h3>Reactive</h3>
-          <h3>Polyvalence</h3>
-          <h3>Agility</h3>
+          <h3>Endurance</h3>
+          <h3>Fluid Ride</h3>
+          <h3>Performance</h3>
         
         <p class="lead">
-          IZON is the ideal all around bike, climbing or descending those long switchbacks to attacking around a corner in a criterium,the intuitiveness of the IZON will surprise you.
+          The same hand-made construction and materials as the SKYLON and the IZON but with long rides in mind. Generous use of vibration-damping VECTRAN® woven directly into the carbon tubes along with a more relaxed geometry will make you smile even after 5+ hours into your ride.
         </p>
       </div>
     </div>
@@ -38,10 +38,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <%= image_tag 'Izon-red-frame.png', class: 'img-responsive' %>
+        <%= image_tag 'Fluidity-montrouge-frame.png', class: 'img-responsive' %>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <%= image_tag 'Izon-AKTIV-red-frame.png', class: 'img-responsive' %>
+        <%= image_tag 'Fluidity-AKTIV-noir-frame.png', class: 'img-responsive' %>
       </div>
     </div>
     <div class="row">
@@ -126,7 +126,7 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <% @izon_images.each_with_index do |izon, index| %>
+            <% @fluidity_images.each_with_index do |fluidity, index| %>
             <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>" style="background-color:#cdcdcd;"></li>
             <% end %>
           </ol>
@@ -134,12 +134,12 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
 
-            <% @izon_images.each_with_index do |izon, index| %>
+            <% @fluidity_images.each_with_index do |fluidity, index| %>
 
             <div class="item <% if index == 0 %>active<% end %>" >
-              <%= image_tag izon[:bike_image], alt: izon[:bike_title], class: 'img-responsive gallery-img' %>
+              <%= image_tag fluidity[:bike_image], alt: fluidity[:bike_title], class: 'img-responsive gallery-img' %>
               <div class="carousel-caption">
-                <%= izon[:bike_title] %>
+                <%= fluidity[:bike_title] %>
               </div>
             </div>
             <% end %>`
@@ -165,8 +165,8 @@
         <%= image_tag 'TIME-2015-geometry.png', class: 'img-responsive center-it' %>
       </div>
       <div class="col-lg-7">
-        <h3>IZON Geometry</h3>
-        <%= render 'shared/izon_geo_grid' %>
+        <h3>Fludity Geometry</h3>
+        <%= render 'shared/fluidity_geo_grid' %>
       </div>
     </div>
   </div>
