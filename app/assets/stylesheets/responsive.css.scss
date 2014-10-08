@@ -56,7 +56,29 @@
     padding:80px;
     // .gallery-img {width:150%;margin:0 auto;}
   }
+
+  #what-is-aktiv {
+
+  height:200px;
+  background-image:url(AKTIV-bg.jpg);
+  background-color:black;
+  background-repeat:no-repeat;
+  .padding-left {
+    padding-left:30px;
+  }
+  h1 {
+    margin-top:20px;
+    @include header-style(42px, 100, $time-red);
+  }
+  img {margin:20px auto 0px auto;}
+  a {color:$time-red;}
+  } 
+  #aktiv-choice {
+    #or h1 {margin:0 auto;}
+  }
 }
+
+
 
 
 
@@ -99,6 +121,16 @@
   }
   .gallery-img {width:100%;margin:0 auto;}
 
+  #what-is-aktiv {
+
+  h1 {
+    margin-top:40px;
+    @include header-style(42px, 100, $time-red);
+  }
+  img {margin:40px auto 0px auto;}
+  a {color:$time-red;}
+  } 
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -132,6 +164,12 @@
   }
 
   .gallery-img {width:90%;margin:0 auto;}
+  #aktiv-choice {
+    p {
+      font-size:16px;
+      line-height:1.5em;
+    }
+  }
 
 
 }

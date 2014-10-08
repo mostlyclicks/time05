@@ -45,6 +45,8 @@ html, body {
   }
 }
 
+
+
 //HOME TOP ////////////////////////////////////////////////////////////////////
 #top {
   height:480px;
@@ -135,14 +137,47 @@ html, body {
 }
 
 #aktiv-choice {
-  padding:40px 10px;
+  padding:80px 10px;
   background-color:#fff;
-  h1 {@include header-style(32px, 200, $time-red);}
+  h1 {@include header-style(32px, 200, #000);}
   #or h1{
-    font-size:48px;
-    font-weight:$heavy-weight;
-
+    display:block;
+    font-size:35px;
+    font-weight:$light-weight;
+    background-color:#000;
+    color:$time-plasma;
+    height:80px;
+    width:80px;
+    line-height:70px;
+    margin:0 auto;
+    border-radius:50%;
+    border:3px solid lighten(#000, 50%);
   }
+  img {
+    
+    // margin:0 20px 0 20px;
+  }
+  p {
+    color:rgba(0,0,0,.4);
+  }
+}
+
+#what-is-aktiv {
+
+  height:200px;
+  background-image:url(AKTIV-bg.jpg);
+  background-color:black;
+  background-repeat:no-repeat;
+  .padding-left {
+    padding-left:30px;
+  }
+  h1 {
+    margin-top:10px;
+    @include header-style(30px, 100, $time-red);
+  }
+  p.lead {color:#fff;}
+  img {margin:10px auto 0px auto;}
+  a {color:$time-red;}
 }
 
 #l2-bike-features {
