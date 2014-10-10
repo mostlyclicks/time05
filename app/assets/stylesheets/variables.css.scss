@@ -38,6 +38,27 @@ $heavy-weight:700;
   width:$size;
 }
 
+
+
+.l2-main-txt {
+  
+  padding:20px;
+  text-align:center;
+  img {margin:0 auto;}
+}
+
+.l2-h3-xs {
+  display:inline-block; 
+  padding:.25em;
+  text-transform: uppercase;
+}
+
+.l2-main-lead {
+  color:#fff;
+  text-shadow:2px 2px 15px rgba(0,0,0,1);
+}
+
+
 .carousel-caption {
   color:#cdcdcd;
   font-size:16px;

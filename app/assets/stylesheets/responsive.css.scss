@@ -22,7 +22,7 @@
   }
 
   #l2-bike {
-    #bike-main-txt {
+    #bike-main-txt, #pedal-main-txt {
       border:none;
       img {
         margin-top:0px;
@@ -88,9 +88,9 @@
   #top {
     @include background-style(110%, 50%, 100%, no-repeat);
   }
-  #l2-bike {
+  #l2-bike, #pedal-xpresso-hero {
     height:100vh;
-    #bike-main-txt {
+    #bike-main-txt, #pedal-main-txt {
       margin-top:0px;
       padding-top:100px;
       border:none;
@@ -107,6 +107,8 @@
         border-top:none;
       }
     }
+
+    
 
     #bike-img img {@include bike-hero-style(-500px, 210%);}
   }
@@ -142,7 +144,7 @@
   #l2-bike {
     @include background-style(cover, 50%, 100%, no-repeat);
     height:100vh;
-    #bike-main-txt {
+    #bike-main-txt, #pedal-main-txt {
       margin-top:0px;
       padding-top:100px;
       border:none;
