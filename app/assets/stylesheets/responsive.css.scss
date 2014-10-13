@@ -13,6 +13,11 @@
     min-height:720px;
     @include background-style(120%, 50%, 100%, no-repeat);
     h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
+    .tri-nav {padding:10px;}
+    #top-made-in-france {
+      padding:40px 0;
+      img {margin:0 auto;}
+    }
   }
   .lead {
     color:#fff;
@@ -86,7 +91,14 @@
 @media (min-width: $screen-md-min) { 
   //body {border:5px solid blue;}
   #top {
+    padding:40px 0 0 0;
+    height:100vh;
     @include background-style(110%, 50%, 100%, no-repeat);
+    .tri-nav {padding:0 10px;}
+    #top-made-in-france {
+      padding:40px 0;
+      img {margin:0 auto;}
+    }
   }
   #l2-bike, #pedal-xpresso-hero {
     height:100vh;
@@ -139,7 +151,11 @@
 @media (min-width: $screen-lg-min) { 
  // body {border:5px solid yellow;}
   #top {
-    @include background-style(99%, 50%, 100%, no-repeat);
+
+    @include background-style(cover, 50%, 100%, no-repeat);
+
+    .tri-nav {padding:10px;}
+
   }
   #l2-bike {
     @include background-style(cover, 50%, 100%, no-repeat);

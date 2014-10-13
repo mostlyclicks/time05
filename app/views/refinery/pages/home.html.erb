@@ -6,21 +6,30 @@
         <h1>Welcome to TIME Sport USA</h1>      
       </div>
     </div>
-    <div class="row">
-      <div class='col-xs-4 text-center' style="border:1px solid red;height:100px;">
-        <h2>Technologies</h2>
-      </div>
-      <div class='col-xs-4 text-center' style="border:1px solid red;height:100px;">
-        <h2>Bikes/Frames</h2>
-      </div>
-      <div class='col-xs-4 text-center' style="border:1px solid red;height:100px;">
-        <h2>Pedals</h2>
+    <div class="row col-centered" style="margin:0 auto;border:0px solid blue;">
+      <div class="col-lg-8 col-lg-offset-2 col-md-offset-1 col-md-10 text-center" style="border:0px solid red;text-align:center;">
+        <div class="row">
+          <div class='col-xs-4 col-md-4 text-center tri-nav'>
+            <h2>Technologies</h2>
+            <%= image_tag 'top-AKTIV.png', class: 'img-responsive img-circle' %>
+          </div>
+          <div class='col-xs-4 col-md-4  text-center tri-nav'>
+            <h2>Bikes/Frames</h2>
+            <%= image_tag 'top-bike-4.png', class: 'img-responsive img-circle' %>
+          </div>
+          <div class='col-xs-4 col-md-4 text-center tri-nav'>
+            <h2>Pedals</h2>
+            <%= image_tag 'top-pedal.png', class: 'img-responsive img-circle' %>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row" id="top-bike">
-      <div class="col-xs-12 col-lg-12">
-        <%#= image_tag 'top-bg-1.png', class: 'img-responsive' %>
+    <div class="row" id="top-made-in-france">
+      <div class="col-lg-4 col-lg-offset-4 col-xs-4 col-xs-offset-4 text-center">
+        <h3>Made in France</h3>
+        <%= image_tag 'made-in-france-bars.png', class: 'img-responsive', width: '200' %>
+        <a href="#made-in-france"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
       </div>
     </div>
 

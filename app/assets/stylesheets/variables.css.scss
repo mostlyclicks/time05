@@ -8,14 +8,16 @@ $heavy-weight:700;
 
 
 
-
-
 //navbar 
 .nav > li > a {
   text-transform: uppercase;
   font-size:12px;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 
 @mixin header-style($font-size, $font-weight, $font-color) {
   font-family:$light-sans-serif;
@@ -25,7 +27,6 @@ $heavy-weight:700;
 }
 
 @mixin background-style($bg-size, $bg-pos-x, $bg-pos-y, $bg-repeat) {
-
   background-size:$bg-size;
   background-position-x:$bg-pos-x;
   background-position-y:$bg-pos-y;
@@ -38,10 +39,7 @@ $heavy-weight:700;
   width:$size;
 }
 
-
-
 .l2-main-txt {
-  
   padding:20px;
   text-align:center;
   img {margin:0 auto;}

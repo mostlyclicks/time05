@@ -49,8 +49,21 @@ html, body {
 
 //HOME TOP ////////////////////////////////////////////////////////////////////
 #top {
-  height:480px;
+  height:100vh - 5vh;
   .container {padding:0 10px;}
+  .tri-nav {
+    // border:1px solid red;
+    padding:5px;
+    img {border:2px solid rgba(225,225,225,.2);}
+  }
+  #top-made-in-france {
+    margin-top:50vh - 45vh;
+    h3 {@include header-style(14px, 200, $time-red);}
+    span {
+      margin-top:.5em;
+    }
+  }  
+
   h1 {
     @include header-style(32px, 100, $time-red);
     text-align:center;
