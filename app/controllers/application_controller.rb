@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :load_skylon_images, :load_izon_images, :load_fluidity_images
+  before_filter :load_home_bikes
 
 
   protected
@@ -47,6 +48,14 @@ class ApplicationController < ActionController::Base
       { bike_image: 'Fluidity-DISC-red-bike.png', bike_title: 'Fluidity DISC Red'},
       { bike_image: 'Fluidity-montblanc-bike.png', bike_title: 'Fluidity Mont Blanc'},
       { bike_image: 'Fluidity-montrouge-bike.png', bike_title: 'Fluidity Mont Rouge'}
+    ]
+  end
+
+  def load_home_bikes
+    @home_bikes = [
+      {bike_image: 'Skylon-AKTIV-Team_bike.png', bike_logo: 'SKYLON-LOGO-black.png', bike_headline: 'Shaped by air', bike_bg: 'home-bike-skylon-bg.jpg'},
+      {bike_image: 'Izon-AKTIV-white-bike.png', bike_logo: 'IZON-LOGO-black.png', bike_headline: '', bike_bg: 'home-bike-izon-bg.jpg'},
+      {bike_image: 'Fluidity-AKTIV-black-bike.png', bike_logo: 'FLUIDITY-LOGO-black.png', bike_headline: '', bike_bg: 'home-bike-fluidity-bg.jpg'}
     ]
   end
 

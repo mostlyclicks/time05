@@ -38,24 +38,102 @@
 </section>
 
 <section id="made-in-france">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <h1>Made in France</h1>
+      <div class="col-lg-3 col-lg-offset-1 text-center col-md-3" id="headline">
+        <h1>Made in France</h1>
+        <%= image_tag 'made-in-france-bars.png', class: 'img-responsive col-centered', width: '200' %>
+      </div>
+      <div class="col-lg-7" id="description">
+        <p>Yes, Oui! Made in France. Our carbon fiber frames start out as, well, fiber. We weave our own carbon fabric, controlling each strand. Our RTM process, also in-house, fuses the resin with the fabric in exact thickness. The inside of our frames look as good as the outside.</p>
+        <h3 class="">
+          <a href="#">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
+        </h3>
+      </div>
     </div>
   </div>
 </section>
 
+
+
+
 <section id="bikes-frames-feature">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <h1>Bikes/Frames Features</h1>
+      <div class="col-lg-12 text-center">
+      <h1>What's new for 2015</h1>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% @home_bikes.each_with_index do |bike, index| %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+            <% end %>
+          </ol>
+
+          <style>
+          .carousel-inner {position:relative;height:85vh;}
+          #home-bike-image img {position:absolute;left:-8%;z-index:52;}
+          #home-bike-logo img {position:absolute;right:80px;top:80px;z-index:53;}
+          #home-bike-bg img {position:absolute;right:0;top:500px;z-index:51;}
+          .carousel-control {z-index:1000;}
+          .carousel-control.left, .carousel-control.right {top:50%;}
+
+
+
+
+          </style>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" >
+            <% @home_bikes.each_with_index do |bike, index| %>
+            <div class="item <% if index == 0 %>active<% end %>">
+              <div id="home-bike-image"><%= image_tag bike[:bike_image], alt: bike[:bike_headline] %></div>
+              <div id="home-bike-logo"><%= image_tag bike[:bike_logo] %></div>
+              <div id="home-bike-bg"><%= image_tag bike[:bike_bg] %></div>
+            </div>
+            <% end %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="fa fa-angle-left fa-5x"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="fa fa-angle-right fa-5x"></span>
+          </a>
+        </div>
+
+        </div>
     </div>
   </div>
 </section>
+
+
 <section id="bikes-frames">
   <div class="container">
-    <div class="row">
+    <div class="row text-center">
       <h1>Bikes/Frames</h1>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <h3>Aero</h3>
+        <%= image_tag 'Skylon-AKTIV-plasma-bike.png', class: 'img-responsive' %>
+        <%= image_tag 'Skylon-red_bike.png', class: 'img-responsive' %>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <h3>Altitude</h3>
+        <%= image_tag 'Izon-AKTIV-red-bike.png', class: 'img-responsive' %>
+        <%= image_tag 'Izon-plasma-bike.png', class: 'img-responsive' %>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <h3>Endurance</h3>
+        <%= image_tag 'Fluidity-AKTIV-yellow-bike.png', class: 'img-responsive' %>
+        <%= image_tag 'Fluidity-montblanc-bike.png', class: 'img-responsive' %>
+
+      </div>
+      <div class="col-lg-3">
+        <h3>Velodrome</h3>
+
+      </div>
     </div>
   </div>
 </section>

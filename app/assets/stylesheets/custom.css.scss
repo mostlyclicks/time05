@@ -76,14 +76,17 @@ html, body {
 //HOME MADE IN FRANCE /////////////////////////////////////////////////////////
 #made-in-france {
   background-color:$time-red;
-  height:480px;
-  h1 {@include header-style(32px, 100, #fff);}
+  background-image:url(made-in-france-p3.jpg);
+  @include background-style(cover, 50%, 100%, no-repeat);
+  height:100vh - 5vh;
+  h1 {@include header-style(40px, 100, $time-red);}
 }
 
 //Bike/Frames Features ////////////////////////////////////////////////////////
 #bikes-frames-feature {
-  background-color:#efefef;
-  height:480px;
+  padding:80px 0;
+  background-color:#fff;
+  height:100vh;
   h1 {@include header-style(32px, 100, #000);}
 }
 

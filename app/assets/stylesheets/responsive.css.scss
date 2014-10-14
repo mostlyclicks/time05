@@ -81,6 +81,30 @@
   #aktiv-choice {
     #or h1 {margin:0 auto;}
   }
+
+  #made-in-france {
+    position:relative;
+    .row {
+      position:absolute;
+      bottom:-0px;
+    }
+    #headline {
+      h1 {
+        text-transform: uppercase;
+        @include header-style(36px, 100, #fff);
+      }
+      
+    }
+    #description {
+      border-left:2px solid $time-red;
+      padding:20px 0 60px 40px;
+      color:#fff;
+    }
+
+  }
+
+
+
 }
 
 
@@ -189,6 +213,5 @@
     }
   }
 
-
+  
 }
-
