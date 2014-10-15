@@ -40,11 +40,11 @@
 <section id="made-in-france">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 col-lg-offset-1 text-center col-md-3" id="headline">
+      <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 text-center " id="headline">
         <h1>Made in France</h1>
         <%= image_tag 'made-in-france-bars.png', class: 'img-responsive col-centered', width: '200' %>
       </div>
-      <div class="col-lg-7" id="description">
+      <div class="col-lg-7 col-md-7 col-md-offset-0 col-sm-8 col-sm-offset-2" id="description">
         <p>Yes, Oui! Made in France. Our carbon fiber frames start out as, well, fiber. We weave our own carbon fabric, controlling each strand. Our RTM process, also in-house, fuses the resin with the fabric in exact thickness. The inside of our frames look as good as the outside.</p>
         <h3 class="">
           <a href="#">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
@@ -70,15 +70,6 @@
             <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
             <% end %>
           </ol>
-
-<style>
-  /*.carousel-inner {position:relative;height:85vh;}*/
- 
-  /*#home-bike-logo img {position:relative;right:120px;top:80px;z-index:53;}/* */
-  /*#home-bike-bg img {position:relative;right:597px;top:390px;z-index:51;}/* */
-  /*.carousel-control {z-index:1000;}
-  .carousel-control.left, .carousel-control.right {top:50%;}*/
-</style>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" >

@@ -76,17 +76,26 @@ html, body {
 //HOME MADE IN FRANCE /////////////////////////////////////////////////////////
 #made-in-france {
   padding:80px 10px 30px 10px;
-  border:1px solid red;
+  
   background-color:$time-red;
   background-image:url(made-in-france-p3.jpg);
   @include background-style(cover, 50%, 100%, no-repeat);
   height:100vh;
-  h1 {@include header-style(40px, 100, $time-red);}
+  #headline {
+    h1 {
+      @include header-style(40px, 100, #fff);
+      text-shadow:2px 2px 5px rgba(0,0,0,1);
+      text-transform: uppercase;
+    }  
+    img {margin-bottom:20px;}
+  }
+  
   p {color:#fff;}
     position:relative;
   .row {
     position:absolute;
     bottom:-0px;
+    padding:20px 20px 20px 20px;
   }
 }
 

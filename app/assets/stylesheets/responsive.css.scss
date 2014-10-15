@@ -53,9 +53,6 @@
     border-top:2px solid $time-red;
   }
 
- 
-
-
   #l2-bike {
     #bike-main-txt, #pedal-main-txt {
       border:none;
@@ -79,13 +76,11 @@
     @include background-style(120%, 50%, 100%, no-repeat);
     #bike-features-sub {
       padding:40px 0;
-
       h2 {
-      @include header-style(42px, 700, $time-red);
-      text-transform: uppercase;
+        @include header-style(42px, 700, $time-red);
+        text-transform: uppercase;
+      }
     }
-    }
-    
   }
   #l2-bike-gallery {
     padding:80px;
@@ -117,24 +112,22 @@
     .row {
       position:absolute;
       bottom:-0px;
+      padding:0;
     }
     #headline {
       h1 {
-        text-transform: uppercase;
+        
         @include header-style(36px, 100, #fff);
       }
-      
+      img {margin-bottom:0;}
+
     }
     #description {
-      border-left:2px solid $time-red;
-      padding:20px 0 60px 40px;
+      border-left:0px solid $time-red;
+      padding:20px 0 20px 40px;
       color:#fff;
     }
-
   }
-
-
-
 }
 
 
@@ -194,9 +187,6 @@
         border-top:none;
       }
     }
-
-    
-
     #bike-img img {@include bike-hero-style(-500px, 210%);}
   }
   #l2-bike-features {
@@ -209,9 +199,7 @@
     }
   }
   .gallery-img {width:100%;margin:0 auto;}
-
   #what-is-aktiv {
-
   h1 {
     margin-top:40px;
     @include header-style(42px, 100, $time-red);
@@ -219,6 +207,18 @@
   img {margin:40px auto 0px auto;}
   a {color:$time-red;}
   } 
+
+  #made-in-france {
+    #headline {
+      padding-right:20px;
+      h1 {@include header-style(28px, 100, #fff);}
+    }
+    #description {
+      border-left:2px solid $time-red !important;
+      padding:20px 0 60px 40px;
+      color:#fff;
+    }
+  }
 
 }
 
@@ -278,7 +278,5 @@
       font-size:16px;
       line-height:1.5em;
     }
-  }
-
-  
+  } 
 }
