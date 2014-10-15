@@ -45,6 +45,19 @@
     #home-bike-bg img {@include home-bike-feature(relative, 51, 170px, 580px, nil, nil);}
   }
 
+  #bikes-frames {
+    //background-color:#efefef;
+    height:auto;
+    padding:80px 0;
+    //h1 {@include header-style(42px, 100, $time-red);}
+    //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+    //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+    h2 {border-bottom:1px solid rgba(0,0,0,.1);}
+  .bike {
+    margin-bottom:40px;
+  }
+}
+
 
   .lead {
     color:#fff;
@@ -198,6 +211,21 @@
       text-transform: uppercase;
     }
   }
+
+  #bikes-frames {
+    //background-color:#efefef;
+    height:auto;
+    padding:80px 0;
+    //h1 {@include header-style(42px, 100, $time-red);}
+    //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+    //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+    h2 {border-bottom:1px solid rgba(0,0,0,.1);}
+    .bike {
+      margin-bottom:40px;
+    }
+  }
+
+
   .gallery-img {width:100%;margin:0 auto;}
   #what-is-aktiv {
   h1 {
@@ -269,6 +297,15 @@
     h2 {
       @include header-style(42px, 700, $time-red);
       text-transform: uppercase;
+    }
+  }
+
+  #bikes-frames {
+    height:auto;
+
+    h2 {border-bottom:0px solid rgba(0,0,0,.1);}
+    .bike {
+      margin-bottom:40px;
     }
   }
 

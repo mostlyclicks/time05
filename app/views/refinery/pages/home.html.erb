@@ -47,7 +47,7 @@
       <div class="col-lg-7 col-md-7 col-md-offset-0 col-sm-8 col-sm-offset-2" id="description">
         <p>Yes, Oui! Made in France. Our carbon fiber frames start out as, well, fiber. We weave our own carbon fabric, controlling each strand. Our RTM process, also in-house, fuses the resin with the fabric in exact thickness. The inside of our frames look as good as the outside.</p>
         <h3 class="">
-          <a href="#">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
+          <a href="#bikes-frames-feature">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
         </h3>
       </div>
     </div>
@@ -102,12 +102,84 @@
 
         </div>
     </div>
+
   </div>
+</section>
+
+<section>  
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top:-30px;">
+        <a href="#bikes-frames"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
+
+      </div>
+
+    </div>
+
+</div>
 </section>
 
 
 <section id="bikes-frames">
-  <div class="container">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h1>The 2015 Collection</h1>
+      <div class="col-lg-3 text-center">
+        <h2>Aero</h2>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Skylon-AKTIV-plasma-bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'SKYLON | AKTIV', '/framesets/skylon' %></h3>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Skylon-red_bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'SKYLON', '/framesets/skylon' %></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <h2>Altitude</h2>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Izon-AKTIV-red-bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'IZON | AKTIV', '/framesets/izon' %></h3>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Izon-plasma-bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'IZON', '/framesets/izon' %></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <h2>Endurance</h2>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Fluidity-AKTIV-yellow-bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'FLUIDITY | AKTIV', '/framesets/fluidity' %></h3>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'Fluidity-montblanc-bike.png', class: 'img-responsive' %>
+            <h3><%= link_to 'FLUIDITY', '/framesets/fluidity' %></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <h2>Velodrome</h2>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6 text-center bike">
+            <%= image_tag 'ZXrs.png', class: 'img-responsive' %>
+            <h3><%= link_to 'ZXrs', '/framesets/ZXrs' %></h3>
+          </div>
+          <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+            <%#= image_tag 'Skylon-red_bike.png', class: 'img-responsive' %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+<% content_for :temp do %>
     <div class="row text-center">
       <h1>Bikes/Frames</h1>
       <div class="col-lg-3 col-md-3 col-sm-6">
@@ -124,13 +196,16 @@
         <h3>Endurance</h3>
         <%= image_tag 'Fluidity-AKTIV-yellow-bike.png', class: 'img-responsive' %>
         <%= image_tag 'Fluidity-montblanc-bike.png', class: 'img-responsive' %>
-
       </div>
       <div class="col-lg-3">
         <h3>Velodrome</h3>
-
+        <%= image_tag 'ZXrs.png', class: 'img-responsive' %>
       </div>
     </div>
+<% end %>
+
+
+
   </div>
 </section>
 <section id="aktiv">
