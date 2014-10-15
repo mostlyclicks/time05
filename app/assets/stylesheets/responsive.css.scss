@@ -5,7 +5,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  //body {border:5px solid gray;}
+  body {border:5px solid gray;}
   .first {
     // display:none;
   }
@@ -15,16 +15,46 @@
     h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
     .tri-nav {padding:10px;}
     #top-made-in-france {
+      position:relative;
+      .row {
+        position:absolute;
+        bottom:-0px;
+      }
       padding:40px 0;
       img {margin:0 auto;}
     }
   }
+
+ #bikes-frames-feature {
+    padding:80px 0;
+    background-color:#fff;
+    min-height:100vh;
+    h1 {@include header-style(32px, 100, #000);}
+    .carousel-inner {position:relative;height:85vh;}
+    .carousel-control {z-index:1000;}
+    .carousel-control.left, .carousel-control.right {top:50%;}
+    //pos, z-index, top, right, bottom, left
+    #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -15%);}
+    #home-bike-logo {
+      img {@include home-bike-feature(relative, 50, 80px, 120px, nil, -135px);}
+      h3 {
+        @include home-bike-feature(relative,54,130px, nil, nil ,-130px);
+        @include header-style(20px, 200, #000);
+      }  
+    }
+    #home-bike-bg img {@include home-bike-feature(relative, 51, 170px, 580px, nil, nil);}
+  }
+
+
   .lead {
     color:#fff;
     text-shadow:2px 2px 15px rgba(0,0,0,1);
     padding:10px;
     border-top:2px solid $time-red;
   }
+
+ 
+
 
   #l2-bike {
     #bike-main-txt, #pedal-main-txt {
@@ -113,7 +143,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  //body {border:5px solid blue;}
+  body {border:5px solid blue;}
   #top {
     padding:40px 0 0 0;
     height:100vh;
@@ -124,6 +154,27 @@
       img {margin:0 auto;}
     }
   }
+
+   #bikes-frames-feature {
+      padding:80px 0;
+      background-color:#fff;
+      height:100vh;
+      h1 {@include header-style(32px, 100, #000);}
+      .carousel-inner {position:relative;height:85vh;}
+      .carousel-control {z-index:1000;}
+      .carousel-control.left, .carousel-control.right {top:50%;}
+      //pos, z-index, top, right, bottom, left
+      #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
+      #home-bike-logo {
+        img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
+        h3 {
+          @include home-bike-feature(relative,54,90px, nil, nil ,-130px);
+          @include header-style(24px, 200, #000);
+        }  
+      }
+      #home-bike-bg img {@include home-bike-feature(relative, 51, 180px, 580px, nil, nil);}
+    }
+
   #l2-bike, #pedal-xpresso-hero {
     height:100vh;
     #bike-main-txt, #pedal-main-txt {
@@ -173,13 +224,29 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
- // body {border:5px solid yellow;}
+ body {border:5px solid yellow;}
   #top {
-
     @include background-style(cover, 50%, 100%, no-repeat);
-
     .tri-nav {padding:10px;}
-
+  }
+  #bikes-frames-feature {
+    padding:80px 0;
+    background-color:#fff;
+    height:100vh;
+    h1 {@include header-style(32px, 100, #000);}
+    .carousel-inner {position:relative;height:85vh;}
+    .carousel-control {z-index:1000;}
+    .carousel-control.left, .carousel-control.right {top:50%;}
+    //pos, z-index, top, right, bottom, left
+    #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
+    #home-bike-logo {
+      img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
+      h3 {
+        @include home-bike-feature(relative,54,220px, nil, nil ,-130px);
+        @include header-style(28px, 200, #000);
+      }  
+    }
+    #home-bike-bg img {@include home-bike-feature(relative, 51, 350px, 550px, nil, nil);}
   }
   #l2-bike {
     @include background-style(cover, 50%, 100%, no-repeat);

@@ -6,7 +6,7 @@ $light-weight:100;
 $med-weight:400;
 $heavy-weight:700;
 
-
+.red-border {border:1px solid red;}
 
 //navbar 
 .nav > li > a {
@@ -17,6 +17,15 @@ $heavy-weight:700;
 .col-centered{
     float: none;
     margin: 0 auto;
+}
+
+@mixin home-bike-feature($position, $z-index, $top, $right, $bottom, $left) {
+  position:$position;
+  z-index:$z-index;
+  top:$top;
+  right:$right;
+  bottom:$bottom;
+  left:$left;
 }
 
 @mixin header-style($font-size, $font-weight, $font-color) {

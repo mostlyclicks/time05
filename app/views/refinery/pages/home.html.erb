@@ -71,36 +71,41 @@
             <% end %>
           </ol>
 
-          <style>
-          .carousel-inner {position:relative;height:85vh;}
-          #home-bike-image img {position:absolute;left:-8%;z-index:52;}
-          #home-bike-logo img {position:absolute;right:80px;top:80px;z-index:53;}
-          #home-bike-bg img {position:absolute;right:0;top:500px;z-index:51;}
-          .carousel-control {z-index:1000;}
-          .carousel-control.left, .carousel-control.right {top:50%;}
-
-
-
-
-          </style>
+<style>
+  /*.carousel-inner {position:relative;height:85vh;}*/
+ 
+  /*#home-bike-logo img {position:relative;right:120px;top:80px;z-index:53;}/* */
+  /*#home-bike-bg img {position:relative;right:597px;top:390px;z-index:51;}/* */
+  /*.carousel-control {z-index:1000;}
+  .carousel-control.left, .carousel-control.right {top:50%;}*/
+</style>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" >
+
             <% @home_bikes.each_with_index do |bike, index| %>
             <div class="item <% if index == 0 %>active<% end %>">
-              <div id="home-bike-image"><%= image_tag bike[:bike_image], alt: bike[:bike_headline] %></div>
-              <div id="home-bike-logo"><%= image_tag bike[:bike_logo] %></div>
-              <div id="home-bike-bg"><%= image_tag bike[:bike_bg] %></div>
+              <div class="col-lg-9 col-sm-9 red-border1" id="home-bike-image"> 
+
+                <%= image_tag bike[:bike_image], alt: bike[:bike_headline], class: 'img-responsive' %>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-4 red-border1 text-center" id="home-bike-logo">
+                <%= image_tag bike[:bike_logo], class: 'img-responsive text-left' %>
+                <h3><%= link_to "See the 2015 #{bike[:bike_headline]}", bike[:bike_url] %></h3>
+              </div>
+              <div class="col-lg-3 col-sm-3 col-xs-6 dhidden-xs red-border1" id="home-bike-bg">
+                <%= image_tag bike[:bike_bg] %>
+              </div>
             </div>
             <% end %>
           </div>
 
           <!-- Controls -->
           <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="fa fa-angle-left fa-5x"></span>
+            <span class="fa fa-angle-left fa-4x"></span>
           </a>
           <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="fa fa-angle-right fa-5x"></span>
+            <span class="fa fa-angle-right fa-4x"></span>
           </a>
         </div>
 

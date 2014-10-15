@@ -53,9 +53,9 @@ class ApplicationController < ActionController::Base
 
   def load_home_bikes
     @home_bikes = [
-      {bike_image: 'Skylon-AKTIV-Team_bike.png', bike_logo: 'SKYLON-LOGO-black.png', bike_headline: 'Shaped by air', bike_bg: 'home-bike-skylon-bg.jpg'},
-      {bike_image: 'Izon-AKTIV-white-bike.png', bike_logo: 'IZON-LOGO-black.png', bike_headline: '', bike_bg: 'home-bike-izon-bg.jpg'},
-      {bike_image: 'Fluidity-AKTIV-black-bike.png', bike_logo: 'FLUIDITY-LOGO-black.png', bike_headline: '', bike_bg: 'home-bike-fluidity-bg.jpg'}
+      {bike_url: '/framesets/skylon', bike_image: 'Skylon-AKTIV-Team_bike.png', bike_logo: 'SKYLON-LOGO-black.png', bike_headline: 'Skylon', bike_bg: 'home-bike-skylon-bg.jpg'},
+      {bike_url: '/framesets/izon', bike_image: 'Izon-AKTIV-white-bike.png', bike_logo: 'IZON-LOGO-black.png', bike_headline: 'Izon', bike_bg: 'home-bike-izon-bg.jpg'},
+      {bike_url: '/framesets/fluidity', bike_image: 'Fluidity-AKTIV-black-bike.png', bike_logo: 'FLUIDITY-LOGO-black.png', bike_headline: 'Fluidity', bike_bg: 'home-bike-fluidity-bg.jpg'}
     ]
   end
 
