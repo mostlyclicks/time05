@@ -141,6 +141,19 @@
       color:#fff;
     }
   }
+
+  #aktiv {
+    //background-color:#000;
+    //height:auto;
+    h1 {@include header-style(32px, 100, #fff);}
+    #aktiv-txt {
+      img {margin:0 auto;}
+      h3, p {color:rgba(255,255,255,.6);}
+      h3 {@include header-style(32px, 100, $time-red);text-align:center;border-bottom:0px solid #fff;}
+      h4 {text-align:center;}
+    }
+    padding:40px 15px;
+  }
 }
 
 
@@ -302,7 +315,6 @@
 
   #bikes-frames {
     height:auto;
-
     h2 {border-bottom:0px solid rgba(0,0,0,.1);}
     .bike {
       margin-bottom:40px;
@@ -316,4 +328,22 @@
       line-height:1.5em;
     }
   } 
+
+  #aktiv {
+    background-color:#000;
+    height:55vh;
+    h1 {@include header-style(32px, 100, #fff);}
+    #aktiv-izon {margin-left:-250px;margin-bottom:-50px;}
+    #aktiv-txt {
+      padding:40px 0 20px 40px;
+      margin-left:-250px;
+      border-left:2px solid $time-red;
+      img {margin:0 0 0 0px;}
+      h3, p {color:rgba(255,255,255,.6);}
+      p .lead {border-top:0px solid red;}
+      h3 {@include header-style(32px, 100, $time-red);text-align:left;}
+      h4 {text-align:center;}
+    }
+    padding:0px 15px;
+  }
 }
