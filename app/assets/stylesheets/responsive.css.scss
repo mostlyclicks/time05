@@ -5,7 +5,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  body {border:5px solid gray;}
+  //body {border:5px solid gray;}
   .first {
     // display:none;
   }
@@ -162,7 +162,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  body {border:5px solid blue;}
+  //body {border:5px solid blue;}
   #top {
     padding:40px 0 0 0;
     height:100vh;
@@ -269,7 +269,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
- body {border:5px solid yellow;}
+ //body {border:5px solid yellow;}
   #top {
     @include background-style(cover, 50%, 100%, no-repeat);
     .tri-nav {padding:10px;}

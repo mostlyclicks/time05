@@ -10,16 +10,16 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-offset-1 col-md-10 text-center" style="border:0px solid red;text-align:center;">
         <div class="row">
           <div class='col-xs-4 col-md-4 text-center tri-nav'>
-            <h2>Technologies</h2>
-            <%= image_tag 'top-AKTIV.png', class: 'img-responsive img-circle' %>
+            <a href="#aktiv" class="scroll-btn"><h2>Technologies</h2></a>
+            <%= link_to image_tag('top-AKTIV.png', class: 'img-responsive img-circle'), '#aktiv',  class: "scroll-btn" %>
           </div>
           <div class='col-xs-4 col-md-4  text-center tri-nav'>
             <h2>Bikes/Frames</h2>
-            <%= image_tag 'top-bike-4.png', class: 'img-responsive img-circle' %>
+            <%= link_to image_tag('top-bike-4.png', class: 'img-responsive img-circle'), '#bikes-frames-feature', class: "scroll-btn" %>
           </div>
           <div class='col-xs-4 col-md-4 text-center tri-nav'>
             <h2>Pedals</h2>
-            <%= image_tag 'top-pedal.png', class: 'img-responsive img-circle' %>
+            <%= link_to image_tag('top-pedal.png', class: 'img-responsive img-circle'), '#pedals', class: "scroll-btn"  %>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
       <div class="col-lg-4 col-lg-offset-4 col-xs-4 col-xs-offset-4 text-center">
         <h3>Made in France</h3>
         <%= image_tag 'made-in-france-bars.png', class: 'img-responsive', width: '200' %>
-        <a href="#made-in-france"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
+        <a href="#made-in-france" class="scroll-btn"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
       </div>
     </div>
 
@@ -47,15 +47,12 @@
       <div class="col-lg-7 col-md-7 col-md-offset-0 col-sm-8 col-sm-offset-2" id="description">
         <p>Yes, Oui! Made in France. Our carbon fiber frames start out as, well, fiber. We weave our own carbon fabric, controlling each strand. Our RTM process, also in-house, fuses the resin with the fabric in exact thickness. The inside of our frames look as good as the outside.</p>
         <h3 class="">
-          <a href="#bikes-frames-feature">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
+          <a href="#bikes-frames-feature" class="scroll-btn">See what's new for 2015 <span class="fa fa-chevron-circle-down "></span></a>
         </h3>
       </div>
     </div>
   </div>
 </section>
-
-
-
 
 <section id="bikes-frames-feature">
   <div class="container-fluid">
@@ -99,25 +96,22 @@
             <span class="fa fa-angle-right fa-4x"></span>
           </a>
         </div>
-
-        </div>
+      </div>
     </div>
-
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top:-30px;margin-bottom:30px;">
+        <a href="#bikes-frames"  class="scroll-btn">See the 2015 Collection</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>  
+<!-- <section>  
   <div class="container">
-  <div class="row">
-      <div class="col-lg-4 col-lg-offset-4 text-center" style="margin-top:-30px;">
-        <a href="#bikes-frames"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
 
-      </div>
-
-    </div>
 
 </div>
-</section>
+</section> -->
 
 
 <section id="bikes-frames">
@@ -257,7 +251,7 @@
       <div class="col-lg-6 col-lg-offset-3 text-center" id="pedal-txt">
         <h3>How light?</h3>
         <p>Super light. Also super smooth and super fast.<br /><br />
-          <h4><%= link_to 'Learn more about the Xpresso 15.', '/pedals/road-pedals' %></h4>
+          <h4><%= link_to 'See how light the Xpresso 15 is.', '/pedals/road-pedals' %></h4>
           <p><%= link_to 'See all 2015 TIME pedals', '/pedals' %></p>
         </p>
       </div>
