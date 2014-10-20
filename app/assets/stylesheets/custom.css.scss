@@ -289,7 +289,7 @@ html, body {
 
 ////PEDALS L2 /////////////////////////////////////////////////////////////////
 
-#pedals-xpresso, #pedals-rxs {
+#pedals-xpresso, #pedals-rxs, #pedals-atac-xc, #pedals-atac-mx {
   h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
   img {@include rotate(-45deg);}
   padding:60px 0 20px 0;
