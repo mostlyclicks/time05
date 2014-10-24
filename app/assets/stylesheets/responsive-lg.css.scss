@@ -41,7 +41,8 @@
         border-top:none;
       }
     }
-    #bike-img img {@include bike-hero-style(-410px, 170%);}
+    //#bike-img img {@include bike-hero-style(-410px, 170%);border:1px solid red;}
+    #bike-img img {width:170% !important;height:170% !important;margin-left:-410px !important;}
   }
   #l2-bike-features {
     padding:80px 0;
@@ -71,7 +72,7 @@
 
   #aktiv {
     background-color:#000;
-    height:60vh;
+    height:90vh;
     h1 {@include header-style(32px, 100, #fff);}
     #aktiv-izon {margin-left:-250px;margin-bottom:-50px;}
     #aktiv-txt {
