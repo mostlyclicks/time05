@@ -75,7 +75,7 @@ p {letter-spacing: .068em;}
     text-align:center;
   }
   h2 {@include header-style(14px, 200, #000);}
-  background-image:url(top-bg-1.png);
+  //background-image:url(top-bg-1.png);
   @include background-style(130%, 50%, 100%, no-repeat)
 }
 
@@ -146,7 +146,7 @@ p {letter-spacing: .068em;}
 #aktiv {
   background-color:#fff;
 
-  height:auto;
+  height:100vh;
   h1 {@include header-style(32px, 100, #fff);}
   #aktiv-txt {
     img {margin:0 auto;}
