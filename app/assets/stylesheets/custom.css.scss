@@ -144,7 +144,8 @@ p {letter-spacing: .068em;}
 
 //AKTIV ///////////////////////////////////////////////////////////////////////
 #aktiv {
-  background-color:#000;
+  background-color:#fff;
+
   height:auto;
   h1 {@include header-style(32px, 100, #fff);}
   #aktiv-txt {
@@ -153,7 +154,8 @@ p {letter-spacing: .068em;}
     h3 {@include header-style(32px, 100, $time-red);text-align:center;}
     h4 {text-align:center;}
   }
-  padding:40px 15px;
+  padding:40px 15px -1px 15px;
+  // border:1px solid red;
 }
 
 //pedals ///////////////////////////////////////////////////////////////////////
