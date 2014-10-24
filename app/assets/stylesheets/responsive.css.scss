@@ -1,363 +1,393 @@
-@import 'variables';
-@import 'bs-overrides';
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+// @import 'variables';
+// @import 'bs-overrides';
+// /* Extra small devices (phones, less than 768px) */
+// /* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { 
-  //body {border:5px solid gray;}
-  .first {
-    // display:none;
-  }
-  #top {
-    min-height:720px;
-    @include background-style(120%, 50%, 100%, no-repeat);
-    h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
-    .tri-nav {padding:10px;}
-    #top-made-in-france {
-      position:relative;
-      .row {
-        position:absolute;
-        bottom:-0px;
-      }
-      padding:40px 0;
-      img {margin:0 auto;}
-    }
-  }
+// /* Small devices (tablets, 768px and up) */
+// @media (min-width: $screen-sm-min) { 
+//   body {border:5px solid gray;}
+//   .first {
+//     // display:none;
+//   }
+//   #top {
+//     min-height:720px;
+//     @include background-style(120%, 50%, 100%, no-repeat);
+//     h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
+//     .tri-nav {padding:10px;}
+//     #top-made-in-france {
+//       position:relative;
+//       .row {
+//         position:absolute;
+//         bottom:-0px;
+//       }
+//       padding:40px 0;
+//       img {margin:0 auto;}
+//     }
+//   }
 
- #bikes-frames-feature {
-    padding:80px 0;
-    background-color:#fff;
-    min-height:100vh;
-    h1 {@include header-style(32px, 100, #000);}
-    .carousel-inner {position:relative;height:85vh;}
-    .carousel-control {z-index:1000;}
-    .carousel-control.left, .carousel-control.right {top:50%;}
-    //pos, z-index, top, right, bottom, left
-    #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -15%);}
-    #home-bike-logo {
-      img {@include home-bike-feature(relative, 50, 80px, 120px, nil, -135px);}
-      h3 {
-        @include home-bike-feature(relative,54,130px, nil, nil ,-130px);
-        @include header-style(20px, 200, #000);
-      }  
-    }
-    #home-bike-bg img {@include home-bike-feature(relative, 51, 170px, 580px, nil, nil);}
-  }
+//  #bikes-frames-feature {
+//     padding:80px 0;
+//     background-color:#fff;
+//     min-height:100vh;
+//     h1 {@include header-style(32px, 100, #000);}
+//     .carousel-inner {position:relative;height:85vh;}
+//     .carousel-control {z-index:1000;}
+//     .carousel-control.left, .carousel-control.right {top:50%;}
+//     //pos, z-index, top, right, bottom, left
+//     #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -15%);}
+//     #home-bike-logo {
+//       img {@include home-bike-feature(relative, 50, 80px, 120px, nil, -135px);}
+//       h3 {
+//         @include home-bike-feature(relative,54,130px, nil, nil ,-130px);
+//         @include header-style(20px, 200, #000);
+//       }  
+//     }
+//     #home-bike-bg img {@include home-bike-feature(relative, 51, 170px, 580px, nil, nil);}
+//   }
 
-  #bikes-frames {
-    //background-color:#efefef;
-    height:auto;
-    padding:80px 0;
-    //h1 {@include header-style(42px, 100, $time-red);}
-    //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
-    //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
-    h2 {border-bottom:1px solid rgba(0,0,0,.1);}
-  .bike {
-    margin-bottom:40px;
-  }
-}
+//   #bikes-frames {
+//     //background-color:#efefef;
+//     height:auto;
+//     padding:80px 0;
+//     //h1 {@include header-style(42px, 100, $time-red);}
+//     //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+//     //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+//     h2 {border-bottom:1px solid rgba(0,0,0,.1);}
+//   .bike {
+//     margin-bottom:40px;
+//   }
+// }
 
 
-  .lead {
-    color:#fff;
-    text-shadow:2px 2px 15px rgba(0,0,0,1);
-    padding:10px;
-    border-top:2px solid $time-red;
-  }
+//   .lead {
+//     color:#fff;
+//     text-shadow:2px 2px 15px rgba(0,0,0,1);
+//     padding:10px;
+//     border-top:2px solid $time-red;
+//   }
 
-  #l2-bike {
-    #bike-main-txt, #pedal-main-txt {
-      border:none;
-      img {
-        margin-top:0px;
+//   #l2-bike {
+//     #bike-main-txt, #pedal-main-txt {
+//       border:none;
+//       img {
+//         margin-top:0px;
         
-      }
-      h3 {
-        display:inline-block; 
-        @include header-style(28px, 100, #fff);
-        margin-top:0;
-        margin-bottom:25px;
-        padding:0 .25em;
-        text-transform: uppercase;
-      }
-    }
-    #bike-img img {@include bike-hero-style(0%, 100%);}
-  }
-  #l2-bike-features {
-    background-image:url(top-bg-3-light.png);
-    @include background-style(120%, 50%, 100%, no-repeat);
-    #bike-features-sub {
-      padding:40px 0;
-      h2 {
-        @include header-style(42px, 700, $time-red);
-        text-transform: uppercase;
-      }
-    }
-  }
-  #l2-bike-gallery {
-    padding:80px;
-    // .gallery-img {width:150%;margin:0 auto;}
-  }
+//       }
+//       h3 {
+//         display:inline-block; 
+//         @include header-style(28px, 100, #fff);
+//         margin-top:0;
+//         margin-bottom:25px;
+//         padding:0 .25em;
+//         text-transform: uppercase;
+//       }
+//     }
+//     #bike-img img {@include bike-hero-style(0%, 100%);}
+//   }
+//   #l2-bike-features {
+//     background-image:url(top-bg-3-light.png);
+//     @include background-style(120%, 50%, 100%, no-repeat);
+//     #bike-features-sub {
+//       padding:40px 0;
+//       h2 {
+//         @include header-style(42px, 700, $time-red);
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+//   #l2-bike-gallery {
+//     padding:80px;
+//     // .gallery-img {width:150%;margin:0 auto;}
+//   }
 
-  #what-is-aktiv {
+//   #what-is-aktiv {
 
-  height:200px;
-  background-image:url(AKTIV-bg.jpg);
-  background-color:black;
-  background-repeat:no-repeat;
-  .padding-left {
-    padding-left:30px;
-  }
-  h1 {
-    margin-top:20px;
-    @include header-style(42px, 100, $time-red);
-  }
-  img {margin:20px auto 0px auto;}
-  a {color:$time-red;}
-  } 
-  #aktiv-choice {
-    #or h1 {margin:0 auto;}
-  }
+//   height:200px;
+//   background-image:url(AKTIV-bg.jpg);
+//   background-color:black;
+//   background-repeat:no-repeat;
+//   .padding-left {
+//     padding-left:30px;
+//   }
+//   h1 {
+//     margin-top:20px;
+//     @include header-style(42px, 100, $time-red);
+//   }
+//   img {margin:20px auto 0px auto;}
+//   a {color:$time-red;}
+//   } 
+//   #aktiv-choice {
+//     #or h1 {margin:0 auto;}
+//   }
 
-  #made-in-france {
-    position:relative;
-    .row {
-      position:absolute;
-      bottom:-0px;
-      padding:0;
-    }
-    #headline {
-      h1 {
+//   #made-in-france {
+//     position:relative;
+//     .row {
+//       position:absolute;
+//       bottom:-0px;
+//       padding:0;
+//     }
+//     #headline {
+//       h1 {
         
-        @include header-style(36px, 100, #fff);
-      }
-      img {margin-bottom:0;}
+//         @include header-style(36px, 100, #fff);
+//       }
+//       img {margin-bottom:0;}
 
-    }
-    #description {
-      border-left:0px solid $time-red;
-      padding:20px 0 20px 40px;
-      color:#fff;
-    }
-  }
+//     }
+//     #description {
+//       border-left:0px solid $time-red;
+//       padding:20px 0 20px 40px;
+//       color:#fff;
+//     }
+//   }
 
-  #aktiv {
-    //background-color:#000;
-    //height:auto;
-    h1 {@include header-style(32px, 100, #fff);}
-    #aktiv-txt {
-      img {margin:0 auto;}
-      h3, p {color:rgba(255,255,255,.6);}
-      h3 {@include header-style(32px, 100, $time-red);text-align:center;border-bottom:0px solid #fff;}
-      h4 {text-align:center;}
-    }
-    padding:40px 15px;
-  }
-}
+//   #aktiv {
+//     //background-color:#000;
+//     //height:auto;
+//     h1 {@include header-style(32px, 100, #fff);}
+//     #aktiv-txt {
+//       img {margin:0 auto;}
+//       h3, p {color:rgba(255,255,255,.6);}
+//       h3 {@include header-style(32px, 100, $time-red);text-align:center;border-bottom:0px solid #fff;}
+//       h4 {text-align:center;}
+//     }
+//     padding:40px 15px;
+//   }
 
+//   #aktiv-hero {
+//     #hero-text {
+//       p {
+//         font-size:20px;
+//       }
+//     }
+//   }
+//   #aktiv-biker {
 
-
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { 
-  //body {border:5px solid blue;}
-  #top {
-    padding:40px 0 0 0;
-    height:100vh;
-    @include background-style(110%, 50%, 100%, no-repeat);
-    .tri-nav {padding:0 10px;}
-    #top-made-in-france {
-      padding:40px 0;
-      img {margin:0 auto;}
-    }
-  }
-
-   #bikes-frames-feature {
-      padding:80px 0;
-      background-color:#fff;
-      height:100vh;
-      h1 {@include header-style(32px, 100, #000);}
-      .carousel-inner {position:relative;height:85vh;}
-      .carousel-control {z-index:1000;}
-      .carousel-control.left, .carousel-control.right {top:50%;}
-      //pos, z-index, top, right, bottom, left
-      #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
-      #home-bike-logo {
-        img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
-        h3 {
-          @include home-bike-feature(relative,54,90px, nil, nil ,-130px);
-          @include header-style(24px, 200, #000);
-        }  
-      }
-      #home-bike-bg img {@include home-bike-feature(relative, 51, 180px, 580px, nil, nil);}
-    }
-
-  #l2-bike, #pedal-xpresso-hero {
-    height:100vh;
-    #bike-main-txt, #pedal-main-txt {
-      margin-top:0px;
-      padding-top:100px;
-      border:none;
-      border-left:2px solid $time-red;
-      h3 {
-        display:block; 
-        @include header-style(28px, 100, #fff);
-        padding:0;
-        margin:0 0 5px 20px;
-        text-align:left;
-        text-transform: uppercase;
-      } 
-      .lead {
-        border-top:none;
-      }
-    }
-    #bike-img img {@include bike-hero-style(-500px, 210%);}
-  }
-  #l2-bike-features {
-    padding:80px 0;
-    background-image:url(top-bg-3-light.png);
-    @include background-style(110%, 50%, 100%, no-repeat);
-    h2 {
-      @include header-style(42px, 700, $time-red);
-      text-transform: uppercase;
-    }
-  }
-
-  #bikes-frames {
-    //background-color:#efefef;
-    height:auto;
-    padding:80px 0;
-    //h1 {@include header-style(42px, 100, $time-red);}
-    //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
-    //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
-    h2 {border-bottom:1px solid rgba(0,0,0,.1);}
-    .bike {
-      margin-bottom:40px;
-    }
-  }
+//   }
+// }
 
 
-  .gallery-img {width:100%;margin:0 auto;}
-  #what-is-aktiv {
-  h1 {
-    margin-top:40px;
-    @include header-style(42px, 100, $time-red);
-  }
-  img {margin:40px auto 0px auto;}
-  a {color:$time-red;}
-  } 
 
-  #made-in-france {
-    #headline {
-      padding-right:20px;
-      h1 {@include header-style(28px, 100, #fff);}
-    }
-    #description {
-      border-left:2px solid $time-red !important;
-      padding:20px 0 60px 40px;
-      color:#fff;
-    }
-  }
 
-  #pedals {
-    margin-top:0px;
-  }
 
-}
+// /* Medium devices (desktops, 992px and up) */
+// @media (min-width: $screen-md-min) { 
+//   body {border:5px solid blue;}
+//   #top {
+//     padding:40px 0 0 0;
+//     height:100vh;
+//     @include background-style(110%, 50%, 100%, no-repeat);
+//     .tri-nav {padding:0 10px;}
+//     #top-made-in-france {
+//       padding:40px 0;
+//       img {margin:0 auto;}
+//     }
+//   }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { 
- //body {border:5px solid yellow;}
-  #top {
-    @include background-style(cover, 50%, 100%, no-repeat);
-    .tri-nav {padding:10px;}
-  }
-  #bikes-frames-feature {
-    padding:80px 0;
-    background-color:#fff;
-    height:100vh;
-    h1 {@include header-style(32px, 100, #000);}
-    .carousel-inner {position:relative;height:85vh;}
-    .carousel-control {z-index:1000;}
-    .carousel-control.left, .carousel-control.right {top:50%;}
-    //pos, z-index, top, right, bottom, left
-    #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
-    #home-bike-logo {
-      img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
-      h3 {
-        @include home-bike-feature(relative,54,220px, nil, nil ,-130px);
-        @include header-style(28px, 200, #000);
-      }  
-    }
-    #home-bike-bg img {@include home-bike-feature(relative, 51, 350px, 550px, nil, nil);}
-  }
-  #l2-bike {
-    @include background-style(cover, 50%, 100%, no-repeat);
-    height:100vh;
-    #bike-main-txt, #pedal-main-txt {
-      margin-top:0px;
-      padding-top:100px;
-      border:none;
-      border-left:2px solid $time-red; 
-      .lead {
-        border-top:none;
-      }
-    }
-    #bike-img img {@include bike-hero-style(-410px, 170%);}
-  }
-  #l2-bike-features {
-    padding:80px 0;
-    background-image:url(top-bg-3-light.png);
-    @include background-style(130%, 50%, 100%, no-repeat);
-    h2 {
-      @include header-style(42px, 700, $time-red);
-      text-transform: uppercase;
-    }
-  }
+//    #bikes-frames-feature {
+//       padding:80px 0;
+//       background-color:#fff;
+//       height:100vh;
+//       h1 {@include header-style(32px, 100, #000);}
+//       .carousel-inner {position:relative;height:85vh;}
+//       .carousel-control {z-index:1000;}
+//       .carousel-control.left, .carousel-control.right {top:50%;}
+//       //pos, z-index, top, right, bottom, left
+//       #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
+//       #home-bike-logo {
+//         img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
+//         h3 {
+//           @include home-bike-feature(relative,54,90px, nil, nil ,-130px);
+//           @include header-style(24px, 200, #000);
+//         }  
+//       }
+//       #home-bike-bg img {@include home-bike-feature(relative, 51, 180px, 580px, nil, nil);}
+//     }
 
-  #bikes-frames {
-    height:auto;
-    h2 {border-bottom:0px solid rgba(0,0,0,.1);}
-    .bike {
-      margin-bottom:40px;
-    }
-  }
+//   #l2-bike, #pedal-xpresso-hero {
+//     height:100vh;
+//     #bike-main-txt, #pedal-main-txt {
+//       margin-top:0px;
+//       padding-top:100px;
+//       border:none;
+//       border-left:2px solid $time-red;
+//       h3 {
+//         display:block; 
+//         @include header-style(28px, 100, #fff);
+//         padding:0;
+//         margin:0 0 5px 20px;
+//         text-align:left;
+//         text-transform: uppercase;
+//       } 
+//       .lead {
+//         border-top:none;
+//       }
+//     }
+//     #bike-img img {@include bike-hero-style(-500px, 210%);}
+//   }
+//   #l2-bike-features {
+//     padding:80px 0;
+//     background-image:url(top-bg-3-light.png);
+//     @include background-style(110%, 50%, 100%, no-repeat);
+//     h2 {
+//       @include header-style(42px, 700, $time-red);
+//       text-transform: uppercase;
+//     }
+//   }
 
-  .gallery-img {width:90%;margin:0 auto;}
-  #aktiv-choice {
-    p {
-      font-size:16px;
-      line-height:1.5em;
-    }
-  } 
+//   #bikes-frames {
+//     //background-color:#efefef;
+//     height:auto;
+//     padding:80px 0;
+//     //h1 {@include header-style(42px, 100, $time-red);}
+//     //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+//     //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+//     h2 {border-bottom:1px solid rgba(0,0,0,.1);}
+//     .bike {
+//       margin-bottom:40px;
+//     }
+//   }
 
-  #aktiv {
-    background-color:#000;
-    height:60vh;
-    h1 {@include header-style(32px, 100, #fff);}
-    #aktiv-izon {margin-left:-250px;margin-bottom:-50px;}
-    #aktiv-txt {
-      padding:40px 0 20px 40px;
-      margin-left:-250px;
-      border-left:2px solid $time-red;
-      img {margin:0 0 0 0px;}
-      h3, p {color:rgba(255,255,255,.6);}
-      p .lead {border-top:0px solid red;}
-      h3 {@include header-style(32px, 100, $time-red);text-align:left;}
-      h4 {text-align:center;}
-    }
-    padding:0px 15px;
-  }
 
-  #pedals {
-    margin-top:200px;
-    padding:30px 0 80px 0;
-    .container {border-top:1px solid rgba(0,0,0,.1);padding:80px 0px;}
+//   .gallery-img {width:100%;margin:0 auto;}
+//   #what-is-aktiv {
+//   h1 {
+//     margin-top:40px;
+//     @include header-style(42px, 100, $time-red);
+//   }
+//   img {margin:40px auto 0px auto;}
+//   a {color:$time-red;}
+//   } 
+
+//   #made-in-france {
+//     #headline {
+//       padding-right:20px;
+//       h1 {@include header-style(28px, 100, #fff);}
+//     }
+//     #description {
+//       border-left:2px solid $time-red !important;
+//       padding:20px 0 60px 40px;
+//       color:#fff;
+//     }
+//   }
+
+//   #pedals {
+//     margin-top:0px;
+//   }
+
+// }
+
+// /* Large devices (large desktops, 1200px and up) */
+// @media (min-width: $screen-lg-min) { 
+//  body {border:5px solid yellow;}
+//   #top {
+//     @include background-style(cover, 50%, 100%, no-repeat);
+//     .tri-nav {padding:10px;}
+//   }
+//   #bikes-frames-feature {
+//     padding:80px 0;
+//     background-color:#fff;
+//     height:100vh;
+//     h1 {@include header-style(32px, 100, #000);}
+//     .carousel-inner {position:relative;height:85vh;}
+//     .carousel-control {z-index:1000;}
+//     .carousel-control.left, .carousel-control.right {top:50%;}
+//     //pos, z-index, top, right, bottom, left
+//     #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -8%);}
+//     #home-bike-logo {
+//       img {@include home-bike-feature(relative, 53, 80px, 120px, nil, nil);}
+//       h3 {
+//         @include home-bike-feature(relative,54,220px, nil, nil ,-130px);
+//         @include header-style(28px, 200, #000);
+//       }  
+//     }
+//     #home-bike-bg img {@include home-bike-feature(relative, 51, 350px, 550px, nil, nil);}
+//   }
+//   #l2-bike {
+//     @include background-style(cover, 50%, 100%, no-repeat);
+//     height:100vh;
+//     #bike-main-txt, #pedal-main-txt {
+//       margin-top:0px;
+//       padding-top:100px;
+//       border:none;
+//       border-left:2px solid $time-red; 
+//       .lead {
+//         border-top:none;
+//       }
+//     }
+//     #bike-img img {@include bike-hero-style(-410px, 170%);}
+//   }
+//   #l2-bike-features {
+//     padding:80px 0;
+//     background-image:url(top-bg-3-light.png);
+//     @include background-style(130%, 50%, 100%, no-repeat);
+//     h2 {
+//       @include header-style(42px, 700, $time-red);
+//       text-transform: uppercase;
+//     }
+//   }
+
+//   #bikes-frames {
+//     height:auto;
+//     h2 {border-bottom:0px solid rgba(0,0,0,.1);}
+//     .bike {
+//       margin-bottom:40px;
+//     }
+//   }
+
+//   .gallery-img {width:90%;margin:0 auto;}
+//   #aktiv-choice {
+//     p {
+//       font-size:16px;
+//       line-height:1.5em;
+//     }
+//   } 
+
+//   #aktiv {
+//     background-color:#000;
+//     height:60vh;
+//     h1 {@include header-style(32px, 100, #fff);}
+//     #aktiv-izon {margin-left:-250px;margin-bottom:-50px;}
+//     #aktiv-txt {
+//       padding:40px 0 20px 40px;
+//       margin-left:-250px;
+//       border-left:2px solid $time-red;
+//       img {margin:0 0 0 0px;}
+//       h3, p {color:rgba(255,255,255,.6);}
+//       p .lead {border-top:0px solid red;}
+//       h3 {@include header-style(32px, 100, $time-red);text-align:left;}
+//       h4 {text-align:center;}
+//     }
+//     padding:0px 15px;
+//   }
+
+//   #pedals {
+//     margin-top:200px;
+//     padding:30px 0 80px 0;
+//     .container {border-top:1px solid rgba(0,0,0,.1);padding:80px 0px;}
     
 
-  }
+//   }
+
+//   //AKTIV 
+
+//   #aktiv-hero {
+//     padding:40px;
+//     #hero-txt p {@include header-style(24px, 100, rgba(255,255,255,.6));}
+//   }
 
 
-}
+//   #aktiv-biker {
+//     //padding:80px 20px;
+//     h3 {@include header-style(24px, 100, rgba(255,255,255,.8));}
+//     p {
+//       @include header-style(16px, 100, rgba(255,255,255,.6));
+
+
+      
+//     }
+//   }
+
+
+// }

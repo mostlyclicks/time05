@@ -1,4 +1,7 @@
 @import 'variables.css.scss';
+@import "responsive-sm.css.scss";
+@import "responsive-md.css.scss";
+@import "responsive-lg.css.scss";
 
 * {
   margin: 0;
@@ -6,6 +9,9 @@
 html, body {
   height: 100%;
 }
+
+p {letter-spacing: .068em;}
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
@@ -293,6 +299,57 @@ html, body {
   h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
   img {@include rotate(-45deg);}
   padding:60px 0 20px 0;
+}
+
+////AKTIV L2 /////////////////////////////////////////////////////////////////
+#aktiv-header {
+  background-color:#000;
+
+}
+
+#aktiv-hero {
+  position:relative;
+  background-color:#121212;
+  background-image:url('AKTIV-bg-2.jpg');
+  background-size:cover;
+  min-height:860px;
+  #hero-txt {
+    //padding-left:100px;
+    position:absolute;
+    
+    padding:20px;
+    top:0%;
+    p {@include header-style(18px, 100, rgba(255,255,255,.6))}
+    img {
+      margin:0 auto;
+    }
+  }
+
+
+}
+
+#aktiv-biker {
+  height:auto;
+  padding:20px;
+  background-image:url(AKTIV-2-bg2.jpg);
+  background-size:cover;
+    p {
+      @include header-style(12px, 200, rgba(255,255,255,1))
+    }
+}
+
+#aktiv-graph {
+  padding:20px;
+  background-color:#000;
+  p {
+      @include header-style(12px, 200, rgba(255,255,255,1))
+  }
+}
+
+#aktiv-models {
+  padding:80px 20px;
+  h1 {@include header-style(48px, 100, #000)}
+  h3 {@include header-style(12px, 200, $time-red)}
 }
 
 

@@ -1,0 +1,181 @@
+@import 'variables';
+@import 'bs-overrides';
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+  //body {border-top:5px solid green;}
+  .first {
+    // display:none;
+  }
+  #top {
+    min-height:720px;
+    @include background-style(120%, 50%, 100%, no-repeat);
+    h2 {text-transform:uppercase;@include header-style(18px, 200, #000);}
+    .tri-nav {padding:10px;}
+    #top-made-in-france {
+      position:relative;
+      .row {
+        position:absolute;
+        bottom:-0px;
+      }
+      padding:40px 0;
+      img {margin:0 auto;}
+    }
+  }
+
+ #bikes-frames-feature {
+    padding:80px 0;
+    background-color:#fff;
+    min-height:100vh;
+    h1 {@include header-style(32px, 100, #000);}
+    .carousel-inner {position:relative;height:85vh;}
+    .carousel-control {z-index:1000;}
+    .carousel-control.left, .carousel-control.right {top:50%;}
+    //pos, z-index, top, right, bottom, left
+    #home-bike-image img {@include home-bike-feature(relative, 52, nil, nil, nil, -15%);}
+    #home-bike-logo {
+      img {@include home-bike-feature(relative, 50, 80px, 120px, nil, -135px);}
+      h3 {
+        @include home-bike-feature(relative,54,130px, nil, nil ,-130px);
+        @include header-style(20px, 200, #000);
+      }  
+    }
+    #home-bike-bg img {@include home-bike-feature(relative, 51, 170px, 580px, nil, nil);}
+  }
+
+  #bikes-frames {
+    //background-color:#efefef;
+    height:auto;
+    padding:80px 0;
+    //h1 {@include header-style(42px, 100, $time-red);}
+    //h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+    //h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+    h2 {border-bottom:1px solid rgba(0,0,0,.1);}
+  .bike {
+    margin-bottom:40px;
+  }
+}
+
+
+  .lead {
+    color:#fff;
+    text-shadow:2px 2px 15px rgba(0,0,0,1);
+    padding:10px;
+    border-top:2px solid $time-red;
+  }
+
+  #l2-bike {
+    #bike-main-txt, #pedal-main-txt {
+      border:none;
+      img {
+        margin-top:0px;
+        
+      }
+      h3 {
+        display:inline-block; 
+        @include header-style(28px, 100, #fff);
+        margin-top:0;
+        margin-bottom:25px;
+        padding:0 .25em;
+        text-transform: uppercase;
+      }
+    }
+    #bike-img img {@include bike-hero-style(0%, 100%);}
+  }
+  #l2-bike-features {
+    background-image:url(top-bg-3-light.png);
+    @include background-style(120%, 50%, 100%, no-repeat);
+    #bike-features-sub {
+      padding:40px 0;
+      h2 {
+        @include header-style(42px, 700, $time-red);
+        text-transform: uppercase;
+      }
+    }
+  }
+  #l2-bike-gallery {
+    padding:80px;
+    // .gallery-img {width:150%;margin:0 auto;}
+  }
+
+  #what-is-aktiv {
+
+  height:200px;
+  background-image:url(AKTIV-bg.jpg);
+  background-color:black;
+  background-repeat:no-repeat;
+  .padding-left {
+    padding-left:30px;
+  }
+  h1 {
+    margin-top:20px;
+    @include header-style(42px, 100, $time-red);
+  }
+  img {margin:20px auto 0px auto;}
+  a {color:$time-red;}
+  } 
+  #aktiv-choice {
+    #or h1 {margin:0 auto;}
+  }
+
+  #made-in-france {
+    position:relative;
+    .row {
+      position:absolute;
+      bottom:-0px;
+      padding:0;
+    }
+    #headline {
+      h1 {
+        
+        @include header-style(36px, 100, #fff);
+      }
+      img {margin-bottom:0;}
+
+    }
+    #description {
+      border-left:0px solid $time-red;
+      padding:20px 0 20px 40px;
+      color:#fff;
+    }
+  }
+
+  #aktiv {
+    //background-color:#000;
+    //height:auto;
+    h1 {@include header-style(32px, 100, #fff);}
+    #aktiv-txt {
+      img {margin:0 auto;}
+      h3, p {color:rgba(255,255,255,.6);}
+      h3 {@include header-style(32px, 100, $time-red);text-align:center;border-bottom:0px solid #fff;}
+      h4 {text-align:center;}
+    }
+    padding:40px 15px;
+  }
+
+  #aktiv-hero {
+    min-height:940px;
+    #hero-text {
+      p {
+        font-size:18px;
+      }
+    }
+  }
+  #aktiv-biker {
+    p {@include header-style(18px, 200, rgba(255,255,255,.5));}
+    h3 {color:rgba(0,0,0,.9);}
+  }
+
+  #aktiv-graph {
+    padding:40px 20px;
+    p {@include header-style(18px, 100, rgba(255,255,255,.6));}
+  }
+
+}
+
+
+
+
