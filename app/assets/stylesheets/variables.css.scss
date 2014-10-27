@@ -6,6 +6,14 @@ $light-weight:100;
 $med-weight:400;
 $heavy-weight:700;
 
+.white-links {
+  color:#fff;
+  &:hover {
+    color:rgba(255,255,255,.5);
+    text-decoration: none;
+  }
+}
+
 .red-border {border:1px solid red;}
 
 //navbar 
