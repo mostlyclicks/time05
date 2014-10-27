@@ -158,21 +158,38 @@
 
   #aktiv-hero {
     min-height:940px;
-    #hero-text {
+    #hero-text {nt
       p {
         font-size:18px;
       }
     }
   }
   #aktiv-biker {
-    p {@include header-style(18px, 200, rgba(255,255,255,.5));}
-    h3 {color:rgba(0,0,0,.9);}
+    p {@include header-style(16px, 200, rgba(255,255,255,.6));text-shadow:3px 3px 10px rgba(0,0,0,.8);}
+    h3 {color:rgba(255,255,255,.9);}
+    h2 {@include header-style(30px, 100, rgba(255,255,255,.9));}
   }
 
   #aktiv-graph {
     padding:40px 20px;
-    p {@include header-style(18px, 100, rgba(255,255,255,.6));}
+    p {@include header-style(16px, 200, rgba(255,255,255,.6));}
   }
+
+  #rtm-intro {
+    padding:100px 20px;
+  background-position-x:50%;
+  p {
+      @include header-style(16px, 200, rgba(255,255,255,.8));
+      background-color:transparent;
+      padding:0px;
+  }
+}
+ #rtm-finish {
+    min-height:400px;
+  background-image:url(rtm-headtube.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+ }
 
 }
 

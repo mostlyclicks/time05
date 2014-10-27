@@ -321,10 +321,11 @@ p {letter-spacing: .068em;}
     
     padding:20px;
     top:0%;
-    p {@include header-style(18px, 100, rgba(255,255,255,.6))}
+    p {@include header-style(16px, 200, rgba(255,255,255,.6))}
     img {
       margin:0 auto;
     }
+    h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
   }
 
 
@@ -336,22 +337,66 @@ p {letter-spacing: .068em;}
   background-image:url(AKTIV-2-bg2.jpg);
   background-size:cover;
     p {
-      @include header-style(12px, 200, rgba(255,255,255,1))
+      @include header-style(16px, 200, rgba(255,255,255,.6))
     }
+    h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
 }
 
 #aktiv-graph {
   padding:20px;
   background-color:#000;
   p {
-      @include header-style(12px, 200, rgba(255,255,255,1))
+      @include header-style(16px, 200, rgba(255,255,255,.6))
   }
+  h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
 }
 
 #aktiv-models {
   padding:80px 20px;
-  h1 {@include header-style(48px, 100, #000)}
+  h1 {@include header-style(30px, 100, #000)}
   h3 {@include header-style(12px, 200, $time-red)}
 }
 
+#rtm-intro {
+  height:100vh;
+  padding:80px 0px;
+  background-image:url(rtm-bb-DSC_0194.jpg);
+  background-size:cover;
+  background-position-x:70%;
+  background-position-y:0px;
+  p {
+      margin-top:20px;
+      @include header-style(16px, 200, rgba(255,255,255,.8));
+      background-color:rgba(0,0,0,.8);
+      padding:20px;
+  }
+}
+
+#rtm-weaving {
+  padding:20px 20px;
+  h3 {@include header-style(24px, 100, $time-red)}
+  h4 {@include header-style(18px, 200, rgba(0,0,0,.8))}
+  p {
+      letter-spacing:0em;
+      @include header-style(14px, 200, rgba(0,0,0,.5));
+      margin-bottom:2em;
+    }
+}
+
+#rtm-resin-injection {
+  background-color:rgba(225,225,225,.1);
+  padding:20px 20px;
+  h3 {@include header-style(24px, 100, $time-red)}
+    p {
+      letter-spacing:0em;
+      @include header-style(14px, 200, rgba(0,0,0,.5));
+      margin-bottom:1em;
+    }
+
+}
+
+#rtm-finish {
+
+  
+}
 

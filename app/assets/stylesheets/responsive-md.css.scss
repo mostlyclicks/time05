@@ -109,6 +109,36 @@
     margin-top:0px;
   }
 
+  #rtm-intro {
+  padding:100px 20px;
+  background-position-x:50%;
+  p {
+      @include header-style(16px, 200, rgba(255,255,255,.8));
+      background-color:transparent;
+      padding:0px;
+  }
+}
+
+#rtm-weaving {
+  padding:40px 20px;
+  img {margin:20px 20px 0 0;padding-right:30px;}
+  h3 {@include header-style(32px, 100, $time-red)}
+  h4 {@include header-style(18px, 200, rgba(0,0,0,.8))}
+  p {
+      letter-spacing:0em;
+      @include header-style(14px, 200, rgba(0,0,0,.5));
+      margin-bottom:2em;
+    }
+}
+
+#rtm-resin-injection {
+  
+  padding:40px 20px;
+  img {margin:20px 0 0 20px; padding-left:10px;}
+  h3 {@include header-style(32px, 100, $time-red)}
+}
+
+
 }
 
 
