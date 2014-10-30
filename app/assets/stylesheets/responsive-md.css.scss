@@ -148,6 +148,17 @@
   h3 {@include header-style(32px, 100, $time-red)}
 }
 
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -280px !important;
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 280px !important; 
+}
+
 
 }
 

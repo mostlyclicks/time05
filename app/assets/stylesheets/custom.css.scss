@@ -15,7 +15,7 @@ p {letter-spacing: .068em;}
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -250px; 
+  margin-bottom: -580px; 
 }
 .page-wrap:after {
   content: "";
@@ -23,11 +23,11 @@ p {letter-spacing: .068em;}
 }
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
-  height: 250px; 
+  height: 580px; 
 }
 .site-footer {
   background: $time-red;
-  padding-top:40px;
+  padding:40px 20px;
   color:#fff;
   ul, li {
     margin:0;
@@ -502,6 +502,10 @@ p {letter-spacing: .068em;}
   background-color:#000;
   h1 {@include header-style(56px, 100, #fff);border-top:1px solid rgba(255,255,255,.4);padding-top:.5em;}
   p {@include header-style(14px, 200, rgba(255,255,255,.7));}
+ }
+
+ #footer2 {
+  background-color:$time-red;
  }
 
 
