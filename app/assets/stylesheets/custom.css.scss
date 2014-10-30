@@ -486,3 +486,25 @@ p {letter-spacing: .068em;}
   p {@include header-style(14px, 200, rgba(0,0,0,.5));}
  }
 
+ #bettini-header, #bettini-main, #bettini-description {
+  background-color:lighten(#000, 10%);
+  h1 {@include header-style(48px, 100, rgba(255,255,255,.6))}
+  h3 {@include header-style(24px, 100, $time-red)} 
+ }
+
+ #bettini-main {
+  background:url(worldchamp-bg.gif) repeat-x lighten(#000, 7%);
+  background-position-y:300px;
+ }
+
+ #bettini-description {
+  padding:60px 0;
+  background-color:#000;
+  h1 {@include header-style(56px, 100, #fff);border-top:1px solid rgba(255,255,255,.4);padding-top:.5em;}
+  p {@include header-style(14px, 200, rgba(255,255,255,.7));}
+ }
+
+
+
+
+
