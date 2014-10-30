@@ -38,13 +38,13 @@
       #home-bike-bg img {@include home-bike-feature(relative, 51, 180px, 580px, nil, nil);}
     }
 
-  #l2-bike, #pedal-xpresso-hero {
+  #l2-bike {
     height:100vh;
     #bike-main-txt, #pedal-main-txt {
       margin-top:0px;
       padding-top:100px;
       border:none;
-      border-left:2px solid $time-red;
+
       h3 {
         display:block; 
         @include header-style(28px, 100, #fff);
@@ -59,6 +59,8 @@
     }
     #bike-img img {@include bike-hero-style(-500px, 210%);}
   }
+
+
   #l2-bike-features {
     padding:80px 0;
     background-image:url(top-bg-3-light.png);
@@ -79,6 +81,14 @@
     h2 {border-bottom:1px solid rgba(0,0,0,.1);}
     .bike {
       margin-bottom:40px;
+    }
+  }
+
+  #pedal-xpresso-hero {
+    h3 {
+      line-height:1em;
+      margin:0;
+      padding:0;
     }
   }
 
