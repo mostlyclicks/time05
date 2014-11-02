@@ -15,3 +15,7 @@
  *= require bootstrap
  *= require_tree .
  */
+
+@import "bs-overrides.css.scss";
+@import "custom.css.scss";
+@import "bootstrap";
