@@ -6,6 +6,10 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
+
+  html, body {
+      border-top:none;
+  }
   //body {border-top:5px solid green;}
   .first {
     // display:none;

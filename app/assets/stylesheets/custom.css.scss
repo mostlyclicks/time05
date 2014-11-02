@@ -1,13 +1,14 @@
 @import 'variables.css.scss';
-@import "responsive-sm.css.scss";
-@import "responsive-md.css.scss";
-@import "responsive-lg.css.scss";
+// @import "responsive-sm.css.scss";
+// @import "responsive-md.css.scss";
+// @import "responsive-lg.css.scss";
 
 * {
   margin: 0;
 }
 html, body {
   height: 100%;
+  border-top:5px solid darken($time-red, 20%);
 }
 
 p {letter-spacing: .068em;}
