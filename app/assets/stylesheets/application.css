@@ -13,7 +13,3 @@
  *= require_self
  *= require_tree .
  */
-
-@import "custom.css.scss";
-@import "bs-overrides.css.scss";
-@import "bootstrap";
