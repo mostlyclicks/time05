@@ -56,7 +56,7 @@ p {letter-spacing: .068em;}
 
 //HOME TOP ////////////////////////////////////////////////////////////////////
 #top {
-  height:100vh - 5vh;
+  min-height:480px;
   .container {padding:0 10px;}
   .tri-nav {
     // border:1px solid red;
