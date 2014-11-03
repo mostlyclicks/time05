@@ -75,7 +75,7 @@ p {letter-spacing: .068em;}
     @include header-style(32px, 100, $time-red);
     text-align:center;
   }
-  h2 {@include header-style(14px, 200, #000);}
+  h2 {@include header-style(14px, 200, $time-red);}
   //background-image:url(top-bg-1.png);
   @include background-style(130%, 50%, 100%, no-repeat)
 }
