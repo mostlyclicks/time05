@@ -1,513 +1,513 @@
-@import 'variables.css.scss';
-// @import "responsive-sm.css.scss";
-// @import "responsive-md.css.scss";
-// @import "responsive-lg.css.scss";
+// @import 'variables.css.scss';
+// // @import "responsive-sm.css.scss";
+// // @import "responsive-md.css.scss";
+// // @import "responsive-lg.css.scss";
 
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-  border-top:5px solid darken($time-red, 20%);
-}
+// * {
+//   margin: 0;
+// }
+// html, body {
+//   height: 100%;
+//   border-top:5px solid darken($time-red, 20%);
+// }
 
-p {letter-spacing: .068em;}
+// p {letter-spacing: .068em;}
 
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -580px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  /* .push must be the same height as footer */
-  height: 580px; 
-}
-.site-footer {
-  background: $time-red;
-  padding:40px 20px;
-  color:#fff;
-  ul, li {
-    margin:0;
-    padding:0;
-    list-style:none;
-  }
-  a {
-    color:rgba(255,255,255,.6);
-    &:hover {
-      color:rgba(255,255,255,1);
-    }
-  }
-  small {
-    display:block;
-    margin-top:20px;
-    color:rgba(255,255,255,.3);
-  }
-  h4 {@include header-style(24px, 100, #fff);}
-  span {
-    margin:0 3px;
-  }
-}
+// .page-wrap {
+//   min-height: 100%;
+//   /* equal to footer height */
+//   margin-bottom: -580px; 
+// }
+// .page-wrap:after {
+//   content: "";
+//   display: block;
+// }
+// .site-footer, .page-wrap:after {
+//   /* .push must be the same height as footer */
+//   height: 580px; 
+// }
+// .site-footer {
+//   background: $time-red;
+//   padding:40px 20px;
+//   color:#fff;
+//   ul, li {
+//     margin:0;
+//     padding:0;
+//     list-style:none;
+//   }
+//   a {
+//     color:rgba(255,255,255,.6);
+//     &:hover {
+//       color:rgba(255,255,255,1);
+//     }
+//   }
+//   small {
+//     display:block;
+//     margin-top:20px;
+//     color:rgba(255,255,255,.3);
+//   }
+//   h4 {@include header-style(24px, 100, #fff);}
+//   span {
+//     margin:0 3px;
+//   }
+// }
 
 
 
-//HOME TOP ////////////////////////////////////////////////////////////////////
-#top {
-  min-height:480px;
-  .container {padding:0 10px;}
-  .tri-nav {
-    // border:1px solid red;
-    padding:5px;
-    img {border:2px solid rgba(225,225,225,.2);}
-  }
-  #top-made-in-france {
-    margin-top:50vh - 45vh;
-    h3 {@include header-style(14px, 200, $time-red);}
-    span {
-      margin-top:.5em;
-    }
-  }  
+// //HOME TOP ////////////////////////////////////////////////////////////////////
+// #top {
+//   min-height:480px;
+//   .container {padding:0 10px;}
+//   .tri-nav {
+//     // border:1px solid red;
+//     padding:5px;
+//     img {border:2px solid rgba(225,225,225,.2);}
+//   }
+//   #top-made-in-france {
+//     margin-top:50vh - 45vh;
+//     h3 {@include header-style(14px, 200, $time-red);}
+//     span {
+//       margin-top:.5em;
+//     }
+//   }  
 
-  h1 {
-    @include header-style(32px, 100, $time-red);
-    text-align:center;
-  }
-  h2 {@include header-style(14px, 200, $time-red);}
-  //background-image:url(top-bg-1.png);
-  @include background-style(130%, 50%, 100%, no-repeat)
-}
+//   h1 {
+//     @include header-style(32px, 100, $time-red);
+//     text-align:center;
+//   }
+//   h2 {@include header-style(14px, 200, $time-red);}
+//   //background-image:url(top-bg-1.png);
+//   @include background-style(130%, 50%, 100%, no-repeat)
+// }
 
-//HOME MADE IN FRANCE /////////////////////////////////////////////////////////
-#made-in-france {
-  padding:80px 10px 30px 10px;
+// //HOME MADE IN FRANCE /////////////////////////////////////////////////////////
+// #made-in-france {
+//   padding:80px 10px 30px 10px;
   
-  background-color:$time-red;
-  background-image:url(made-in-france-p3.jpg);
-  @include background-style(cover, 50%, 100%, no-repeat);
-  height:100vh;
-  #headline {
-    h1 {
-      @include header-style(40px, 100, #fff);
-      text-shadow:2px 2px 5px rgba(0,0,0,1);
-      text-transform: uppercase;
-    }  
-    img {margin-bottom:20px;}
-  }
+//   background-color:$time-red;
+//   background-image:url(made-in-france-p3.jpg);
+//   @include background-style(cover, 50%, 100%, no-repeat);
+//   height:100vh;
+//   #headline {
+//     h1 {
+//       @include header-style(40px, 100, #fff);
+//       text-shadow:2px 2px 5px rgba(0,0,0,1);
+//       text-transform: uppercase;
+//     }  
+//     img {margin-bottom:20px;}
+//   }
   
-  p {color:#fff;}
-    position:relative;
-  .row {
-    position:absolute;
-    bottom:-0px;
-    padding:20px 20px 20px 20px;
-  }
-}
+//   p {color:#fff;}
+//     position:relative;
+//   .row {
+//     position:absolute;
+//     bottom:-0px;
+//     padding:20px 20px 20px 20px;
+//   }
+// }
 
-//Bike/Frames Features ////////////////////////////////////////////////////////
-#bikes-frames-feature {
-    padding:30% 0;
-    background-color:#fff;
-    height:auto;
-    h1 {@include header-style(42px, 100, #000);}
-    .carousel-inner {position:relative;height:85vh;}
-    .carousel-control {z-index:1000;}
-    .carousel-control.left, .carousel-control.right {top:70px;}
-    //pos, z-index, top, right, bottom, left
-    #home-bike-image img {@include home-bike-feature(relative, 52, nil, 0%, nil, nil);}
-    #home-bike-logo {
-      img {@include home-bike-feature(relative, 53, -20px, 0%, nil, 0px);}//
-      h3 {
-        @include home-bike-feature(relative,54,-30px, nil, nil ,nil);
-        @include header-style(20px, 200, #000);
-      } 
-    }
-    #home-bike-bg img {@include home-bike-feature(relative, 51, -370px, -180px, nil, nil);}//
-}
-
-
-//Bike/Frames /////////////////////////////////////////////////////////////////
-#bikes-frames {
-  background-color:#efefef;
-  height:auto;
-  padding:80px 0;
-  h1 {@include header-style(42px, 100, $time-red);}
-  h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
-  h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
-
-  .bike {
-    margin-bottom:40px;
-  }
-
-}
-
-//AKTIV ///////////////////////////////////////////////////////////////////////
-#aktiv {
-  background-color:#fff;
-
-  height:100vh;
-  h1 {@include header-style(32px, 100, #fff);}
-  #aktiv-txt {
-    img {margin:0 auto;}
-    h3, p {color:rgba(255,255,255,.6);}
-    h3 {@include header-style(32px, 100, $time-red);text-align:center;}
-    h4 {text-align:center;}
-  }
-  padding:40px 15px -1px 15px;
-  // border:1px solid red;
-}
-
-//pedals ///////////////////////////////////////////////////////////////////////
-#pedals {
-  background-color:#fff;
-  padding:80px;
-  height:auto;
-  h1 {@include header-style(42px, 100, $time-red);}
-  margin-top:0px;
-  padding:40px 15px;
-  h3 {@include header-style(36px, 100, $time-red);}
-  p {font-size:18px;}
-}
+// //Bike/Frames Features ////////////////////////////////////////////////////////
+// #bikes-frames-feature {
+//     padding:30% 0;
+//     background-color:#fff;
+//     height:auto;
+//     h1 {@include header-style(42px, 100, #000);}
+//     .carousel-inner {position:relative;height:85vh;}
+//     .carousel-control {z-index:1000;}
+//     .carousel-control.left, .carousel-control.right {top:70px;}
+//     //pos, z-index, top, right, bottom, left
+//     #home-bike-image img {@include home-bike-feature(relative, 52, nil, 0%, nil, nil);}
+//     #home-bike-logo {
+//       img {@include home-bike-feature(relative, 53, -20px, 0%, nil, 0px);}//
+//       h3 {
+//         @include home-bike-feature(relative,54,-30px, nil, nil ,nil);
+//         @include header-style(20px, 200, #000);
+//       } 
+//     }
+//     #home-bike-bg img {@include home-bike-feature(relative, 51, -370px, -180px, nil, nil);}//
+// }
 
 
+// //Bike/Frames /////////////////////////////////////////////////////////////////
+// #bikes-frames {
+//   background-color:#efefef;
+//   height:auto;
+//   padding:80px 0;
+//   h1 {@include header-style(42px, 100, $time-red);}
+//   h2 {@include header-style(32px, 100, rgba(0,0,0,.6));}
+//   h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
 
-// Show ///////////////////////////////////////////////////////////////////////
-.show {
-  .container {padding:0 10px;}
-  h1 {@include header-style(36px, 100, $time-red);}
-}
+//   .bike {
+//     margin-bottom:40px;
+//   }
 
-// BIKE ///////////////////////////////////////////////////
-#l2-bike {
-  // background-image:url(bg-SKYLON.jpg);
-  background-repeat:no-repeat;
-  height:auto;
-  width:100%;
-  #bike-main-txt {
-    @extend .l2-main-txt;
-    border-top:2px solid $time-red;
-  }
-  h3 {
-    @include header-style(20px, 100, #fff);
-    @extend .l2-h3-xs;
-  }
-  .lead {
-    @extend .l2-main-lead;
-    text-align:left;
-    padding:20px;
+// }
 
-  }
-  #bike-img img {@include bike-hero-style(0px, 100%);}
-}
+// //AKTIV ///////////////////////////////////////////////////////////////////////
+// #aktiv {
+//   background-color:#fff;
+
+//   height:100vh;
+//   h1 {@include header-style(32px, 100, #fff);}
+//   #aktiv-txt {
+//     img {margin:0 auto;}
+//     h3, p {color:rgba(255,255,255,.6);}
+//     h3 {@include header-style(32px, 100, $time-red);text-align:center;}
+//     h4 {text-align:center;}
+//   }
+//   padding:40px 15px -1px 15px;
+//   // border:1px solid red;
+// }
+
+// //pedals ///////////////////////////////////////////////////////////////////////
+// #pedals {
+//   background-color:#fff;
+//   padding:80px;
+//   height:auto;
+//   h1 {@include header-style(42px, 100, $time-red);}
+//   margin-top:0px;
+//   padding:40px 15px;
+//   h3 {@include header-style(36px, 100, $time-red);}
+//   p {font-size:18px;}
+// }
 
 
 
-#aktiv-choice {
-  padding:80px 10px;
-  background-color:#fff;
-  h1 {@include header-style(32px, 200, #000);}
-  #or h1{
-    display:block;
-    font-size:35px;
-    font-weight:$light-weight;
-    background-color:#000;
-    color:$time-plasma;
-    height:80px;
-    width:80px;
-    line-height:70px;
-    margin:0 auto;
-    border-radius:50%;
-    border:3px solid lighten(#000, 50%);
-  }
-  img {
+// // Show ///////////////////////////////////////////////////////////////////////
+// .show {
+//   .container {padding:0 10px;}
+//   h1 {@include header-style(36px, 100, $time-red);}
+// }
+
+// // BIKE ///////////////////////////////////////////////////
+// #l2-bike {
+//   // background-image:url(bg-SKYLON.jpg);
+//   background-repeat:no-repeat;
+//   height:auto;
+//   width:100%;
+//   #bike-main-txt {
+//     @extend .l2-main-txt;
+//     border-top:2px solid $time-red;
+//   }
+//   h3 {
+//     @include header-style(20px, 100, #fff);
+//     @extend .l2-h3-xs;
+//   }
+//   .lead {
+//     @extend .l2-main-lead;
+//     text-align:left;
+//     padding:20px;
+
+//   }
+//   #bike-img img {@include bike-hero-style(0px, 100%);}
+// }
+
+
+
+// #aktiv-choice {
+//   padding:80px 10px;
+//   background-color:#fff;
+//   h1 {@include header-style(32px, 200, #000);}
+//   #or h1{
+//     display:block;
+//     font-size:35px;
+//     font-weight:$light-weight;
+//     background-color:#000;
+//     color:$time-plasma;
+//     height:80px;
+//     width:80px;
+//     line-height:70px;
+//     margin:0 auto;
+//     border-radius:50%;
+//     border:3px solid lighten(#000, 50%);
+//   }
+//   img {
     
-    // margin:0 20px 0 20px;
-  }
-  p {
-    color:rgba(0,0,0,.4);
-  }
-}
+//     // margin:0 20px 0 20px;
+//   }
+//   p {
+//     color:rgba(0,0,0,.4);
+//   }
+// }
 
-#what-is-aktiv {
+// #what-is-aktiv {
 
-  height:200px;
-  background-image:url(AKTIV-bg.jpg);
-  background-color:black;
-  background-repeat:no-repeat;
-  .padding-left {
-    padding-left:30px;
-  }
-  h1 {
-    margin-top:10px;
-    @include header-style(30px, 100, $time-red);
-  }
-  p.lead {color:#fff;}
-  img {margin:10px auto 0px auto;}
-  a {color:$time-red;}
-}
+//   height:200px;
+//   background-image:url(AKTIV-bg.jpg);
+//   background-color:black;
+//   background-repeat:no-repeat;
+//   .padding-left {
+//     padding-left:30px;
+//   }
+//   h1 {
+//     margin-top:10px;
+//     @include header-style(30px, 100, $time-red);
+//   }
+//   p.lead {color:#fff;}
+//   img {margin:10px auto 0px auto;}
+//   a {color:$time-red;}
+// }
 
-#l2-bike-features {
-  padding:80px 10px;
-  background-color:rgba(225,225,225,.1);
-  h1 {@include header-style(48px, 100, $time-red);}
-  h2 {@include header-style(56px, 700, $time-red);}
-  img {
-    border:5px solid rgba(0,0,0,.1);
-    margin-bottom:15px;
-  }
-  .bike-feature {
-    padding:20px;
-  }
+// #l2-bike-features {
+//   padding:80px 10px;
+//   background-color:rgba(225,225,225,.1);
+//   h1 {@include header-style(48px, 100, $time-red);}
+//   h2 {@include header-style(56px, 700, $time-red);}
+//   img {
+//     border:5px solid rgba(0,0,0,.1);
+//     margin-bottom:15px;
+//   }
+//   .bike-feature {
+//     padding:20px;
+//   }
 
-}
+// }
 
-#l2-bike-gallery {
-  h1 {@include header-style(48px, 100, $time-red);}
+// #l2-bike-gallery {
+//   h1 {@include header-style(48px, 100, $time-red);}
 
-}
+// }
 
-#l2-geometry {
-  padding:80px 0;
-  background-color:rgba(235,235,235,.1);
-  .table-header {
-    font-weight:bold;
-  }
+// #l2-geometry {
+//   padding:80px 0;
+//   background-color:rgba(235,235,235,.1);
+//   .table-header {
+//     font-weight:bold;
+//   }
 
-}
-
-
-////PEDALS L2 /////////////////////////////////////////////////////////////////
-
-#pedals-xpresso, #pedals-rxs, #pedals-atac-xc, #pedals-atac-mx, #pedal-atac-dh {
-  h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
-  img {@include rotate(-45deg);}
-
-  .atac-logo {@include rotate(0deg);}
-  padding:40px 20px 20px 20px;
-  small {display:block;height:4em;}
-  letter-spacing:0em;
-  @include header-style(14px, 200, rgba(0,0,0,.5));
-  margin-bottom:2em;
-  h1 {@include header-style(24px, 100, $time-red);}
-  h2 {@include header-style(32px, 100, rgba(0,0,0,.7));}
-}
-
-#pedal-xpresso-hero {
-  background-image:url(Route2-unblur.jpg);
-  background-repeat:no-repeat;
-  height:auto;
-  background-size:cover;
-  background-position-x:50%;
-  #pedal-main-txt {
-    padding:20px 30px;
-    background-color:rgba(0,0,0,.7);
-    height:100vh;
-  }
-  h3 {
-    @include header-style(20px, 100, #fff);
-    line-height:.25em;
-    padding:0;
-  }
-  p {
-    @include header-style(14px, 200, rgba(255,255,255,.5));
-    margin-top:1em;
-  }
+// }
 
 
-}
+// ////PEDALS L2 /////////////////////////////////////////////////////////////////
 
-#pedal-atac-hero {
-  background-image:url(pedals-atac-hero.jpg);
-  background-size:cover;
-  #pedal-main-txt {
-    padding:20px 30px;
-    background-color:rgba(0,0,0,.7);
-    height:100vh;
-  }
-  h3 {
-    @include header-style(20px, 100, #fff);
-    line-height:.25em;
-    padding:0;
-  }
-  p {
-    @include header-style(14px, 200, rgba(255,255,255,.5));
-    margin-top:1em;
-  }
-}
+// #pedals-xpresso, #pedals-rxs, #pedals-atac-xc, #pedals-atac-mx, #pedal-atac-dh {
+//   h3 {@include header-style(16px, 200, $time-red);margin-top:0;}
+//   img {@include rotate(-45deg);}
 
-#pedal-atac-mx {
-    h3 {
-    @include header-style(20px, 200, #fff);
-    line-height:.25em;
-    padding:0;
-  }
-  p {
-    @include header-style(14px, 200, rgba(255,255,255,.5));
-    margin-top:1em;
-  }
-}
+//   .atac-logo {@include rotate(0deg);}
+//   padding:40px 20px 20px 20px;
+//   small {display:block;height:4em;}
+//   letter-spacing:0em;
+//   @include header-style(14px, 200, rgba(0,0,0,.5));
+//   margin-bottom:2em;
+//   h1 {@include header-style(24px, 100, $time-red);}
+//   h2 {@include header-style(32px, 100, rgba(0,0,0,.7));}
+// }
+
+// #pedal-xpresso-hero {
+//   background-image:url(Route2-unblur.jpg);
+//   background-repeat:no-repeat;
+//   height:auto;
+//   background-size:cover;
+//   background-position-x:50%;
+//   #pedal-main-txt {
+//     padding:20px 30px;
+//     background-color:rgba(0,0,0,.7);
+//     height:100vh;
+//   }
+//   h3 {
+//     @include header-style(20px, 100, #fff);
+//     line-height:.25em;
+//     padding:0;
+//   }
+//   p {
+//     @include header-style(14px, 200, rgba(255,255,255,.5));
+//     margin-top:1em;
+//   }
+
+
+// }
+
+// #pedal-atac-hero {
+//   background-image:url(pedals-atac-hero.jpg);
+//   background-size:cover;
+//   #pedal-main-txt {
+//     padding:20px 30px;
+//     background-color:rgba(0,0,0,.7);
+//     height:100vh;
+//   }
+//   h3 {
+//     @include header-style(20px, 100, #fff);
+//     line-height:.25em;
+//     padding:0;
+//   }
+//   p {
+//     @include header-style(14px, 200, rgba(255,255,255,.5));
+//     margin-top:1em;
+//   }
+// }
+
+// #pedal-atac-mx {
+//     h3 {
+//     @include header-style(20px, 200, #fff);
+//     line-height:.25em;
+//     padding:0;
+//   }
+//   p {
+//     @include header-style(14px, 200, rgba(255,255,255,.5));
+//     margin-top:1em;
+//   }
+// }
 
 
 
 
-////AKTIV L2 /////////////////////////////////////////////////////////////////
-#aktiv-header {
-  background-color:#000;
+// ////AKTIV L2 /////////////////////////////////////////////////////////////////
+// #aktiv-header {
+//   background-color:#000;
 
-}
+// }
 
-#aktiv-hero {
-  position:relative;
-  background-color:#121212;
-  background-image:url('AKTIV-bg-2.jpg');
-  background-size:cover;
-  min-height:860px;
-  #hero-txt {
-    //padding-left:100px;
-    position:absolute;
+// #aktiv-hero {
+//   position:relative;
+//   background-color:#121212;
+//   background-image:url('AKTIV-bg-2.jpg');
+//   background-size:cover;
+//   min-height:860px;
+//   #hero-txt {
+//     //padding-left:100px;
+//     position:absolute;
     
-    padding:20px;
-    top:0%;
-    p {@include header-style(16px, 200, rgba(255,255,255,.6))}
-    img {
-      margin:0 auto;
-    }
-    h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
-  }
+//     padding:20px;
+//     top:0%;
+//     p {@include header-style(16px, 200, rgba(255,255,255,.6))}
+//     img {
+//       margin:0 auto;
+//     }
+//     h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
+//   }
 
 
-}
+// }
 
-#aktiv-biker {
-  height:auto;
-  padding:20px;
-  background-image:url(AKTIV-2-bg2.jpg);
-  background-size:cover;
-    p {
-      @include header-style(16px, 200, rgba(255,255,255,.6))
-    }
-    h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
-}
+// #aktiv-biker {
+//   height:auto;
+//   padding:20px;
+//   background-image:url(AKTIV-2-bg2.jpg);
+//   background-size:cover;
+//     p {
+//       @include header-style(16px, 200, rgba(255,255,255,.6))
+//     }
+//     h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
+// }
 
-#aktiv-graph {
-  padding:20px;
-  background-color:#000;
-  p {
-      @include header-style(16px, 200, rgba(255,255,255,.6))
-  }
-  h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
-}
+// #aktiv-graph {
+//   padding:20px;
+//   background-color:#000;
+//   p {
+//       @include header-style(16px, 200, rgba(255,255,255,.6))
+//   }
+//   h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
+// }
 
-#aktiv-models {
-  padding:80px 20px;
-  h1 {@include header-style(30px, 100, #000)}
-  h3 {@include header-style(12px, 200, $time-red)}
-}
+// #aktiv-models {
+//   padding:80px 20px;
+//   h1 {@include header-style(30px, 100, #000)}
+//   h3 {@include header-style(12px, 200, $time-red)}
+// }
 
-#rtm-intro {
-  height:100vh;
-  padding:80px 0px;
-  background-image:url(rtm-bb-DSC_0194.jpg);
-  background-size:cover;
-  background-position-x:70%;
-  background-position-y:0px;
-  p {
-      margin-top:20px;
-      @include header-style(16px, 200, rgba(255,255,255,.8));
-      background-color:rgba(0,0,0,.8);
-      padding:20px;
-  }
-}
+// #rtm-intro {
+//   height:100vh;
+//   padding:80px 0px;
+//   background-image:url(rtm-bb-DSC_0194.jpg);
+//   background-size:cover;
+//   background-position-x:70%;
+//   background-position-y:0px;
+//   p {
+//       margin-top:20px;
+//       @include header-style(16px, 200, rgba(255,255,255,.8));
+//       background-color:rgba(0,0,0,.8);
+//       padding:20px;
+//   }
+// }
 
-#rtm-weaving {
-  padding:20px 20px;
-  h3 {@include header-style(24px, 100, $time-red)}
-  h4 {@include header-style(18px, 200, rgba(0,0,0,.8))}
-  p {
-      letter-spacing:0em;
-      @include header-style(14px, 200, rgba(0,0,0,.5));
-      margin-bottom:2em;
-    }
-}
+// #rtm-weaving {
+//   padding:20px 20px;
+//   h3 {@include header-style(24px, 100, $time-red)}
+//   h4 {@include header-style(18px, 200, rgba(0,0,0,.8))}
+//   p {
+//       letter-spacing:0em;
+//       @include header-style(14px, 200, rgba(0,0,0,.5));
+//       margin-bottom:2em;
+//     }
+// }
 
-#rtm-resin-injection {
-  background-color:rgba(225,225,225,.1);
-  padding:20px 20px;
-  h3 {@include header-style(24px, 100, $time-red)}
-    p {
-      letter-spacing:0em;
-      @include header-style(14px, 200, rgba(0,0,0,.5));
-      margin-bottom:1em;
-    }
+// #rtm-resin-injection {
+//   background-color:rgba(225,225,225,.1);
+//   padding:20px 20px;
+//   h3 {@include header-style(24px, 100, $time-red)}
+//     p {
+//       letter-spacing:0em;
+//       @include header-style(14px, 200, rgba(0,0,0,.5));
+//       margin-bottom:1em;
+//     }
 
-}
+// }
 
-#rtm-finish {
+// #rtm-finish {
 
 
-}
+// }
 
-#pedal-tech-intro {
-  padding:40px 20px ;
-  background-color:#000;
-  h1 {@include header-style(36px, 100, $time-red)}
-  h2 {@include header-style(24px, 100, #fff)}
-  p {
-    letter-spacing:0em;
-    @include header-style(14px, 200, rgba(255,255,255,.5));
-    margin-bottom:1em;
-  }
-}
+// #pedal-tech-intro {
+//   padding:40px 20px ;
+//   background-color:#000;
+//   h1 {@include header-style(36px, 100, $time-red)}
+//   h2 {@include header-style(24px, 100, #fff)}
+//   p {
+//     letter-spacing:0em;
+//     @include header-style(14px, 200, rgba(255,255,255,.5));
+//     margin-bottom:1em;
+//   }
+// }
 
-#pedal-tech-road, #pedal-tech-atac {
-  padding:60px 20px;
-  background-color:lighten(#000, 15%);
-  h3 {@include header-style(24px, 100, #fff)}
-  p {@include header-style(14px, 200, rgba(255,255,255,.5));}
+// #pedal-tech-road, #pedal-tech-atac {
+//   padding:60px 20px;
+//   background-color:lighten(#000, 15%);
+//   h3 {@include header-style(24px, 100, #fff)}
+//   p {@include header-style(14px, 200, rgba(255,255,255,.5));}
 
-}
+// }
 
-#pedal-tech-atac {
-  background-color:lighten(#000, 30%);
-}
+// #pedal-tech-atac {
+//   background-color:lighten(#000, 30%);
+// }
 
- #time-pedals {
-  padding:60px 20px;
-   background-color:#fff;
-  h3 {@include header-style(24px, 100, $time-red)}
-  p {@include header-style(14px, 200, rgba(0,0,0,.5));}
- }
+//  #time-pedals {
+//   padding:60px 20px;
+//    background-color:#fff;
+//   h3 {@include header-style(24px, 100, $time-red)}
+//   p {@include header-style(14px, 200, rgba(0,0,0,.5));}
+//  }
 
- #dealers {
-  padding:40px;
-  h1 {@include header-style(48px, 100, $time-red)}
-  h3 {@include header-style(24px, 100, $time-red)}
-  p {@include header-style(14px, 200, rgba(0,0,0,.5));}
- }
+//  #dealers {
+//   padding:40px;
+//   h1 {@include header-style(48px, 100, $time-red)}
+//   h3 {@include header-style(24px, 100, $time-red)}
+//   p {@include header-style(14px, 200, rgba(0,0,0,.5));}
+//  }
 
- #bettini-header, #bettini-main, #bettini-description {
-  background-color:lighten(#000, 10%);
-  h1 {@include header-style(48px, 100, rgba(255,255,255,.6))}
-  h3 {@include header-style(24px, 100, $time-red)} 
- }
+//  #bettini-header, #bettini-main, #bettini-description {
+//   background-color:lighten(#000, 10%);
+//   h1 {@include header-style(48px, 100, rgba(255,255,255,.6))}
+//   h3 {@include header-style(24px, 100, $time-red)} 
+//  }
 
- #bettini-main {
-  background:url(worldchamp-bg.gif) repeat-x lighten(#000, 7%);
-  background-position-y:300px;
- }
+//  #bettini-main {
+//   background:url(worldchamp-bg.gif) repeat-x lighten(#000, 7%);
+//   background-position-y:300px;
+//  }
 
- #bettini-description {
-  padding:60px 0;
-  background-color:#000;
-  h1 {@include header-style(56px, 100, #fff);border-top:1px solid rgba(255,255,255,.4);padding-top:.5em;}
-  p {@include header-style(14px, 200, rgba(255,255,255,.7));}
- }
+//  #bettini-description {
+//   padding:60px 0;
+//   background-color:#000;
+//   h1 {@include header-style(56px, 100, #fff);border-top:1px solid rgba(255,255,255,.4);padding-top:.5em;}
+//   p {@include header-style(14px, 200, rgba(255,255,255,.7));}
+//  }
 
- #footer2 {
-  background-color:$time-red;
- }
+//  #footer2 {
+//   background-color:$time-red;
+//  }
 
 
 
