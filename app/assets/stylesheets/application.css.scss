@@ -11,14 +11,15 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require_self
- *= custom.css.scss
+ * custom.css.scss
  *= require_tree .
  */
 
 
 @import "bs-overrides.css.scss";
-@import "bootstrap";
 @import "custom.css.scss";
+@import "bootstrap";
+
 
 
 
